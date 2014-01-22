@@ -1,0 +1,385 @@
+/*!
+ * Roots 6.5.1
+ */
+
+@import "bootstrap/bootstrap.less";
+
+@mainColor: #27ae60;
+@borderColor: #eee;
+
+/* ==========================================================================
+    Base
+    ========================================================================== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+a {
+    color: darken( @mainColor, 5% );
+
+    &:hover {
+        color: darken( @mainColor, 10% );
+    }
+}
+
+/* ==========================================================================
+    Header
+    ========================================================================== */
+
+.banner {
+    background: @mainColor;
+    border: none;
+
+    .navbar-brand {
+        color: #fff;
+    }
+
+    .navbar-nav {
+        float: right;
+
+        li {
+            a {
+                color: #fff;
+                font-size: 15px;
+                font-weight: 300;
+
+                &:hover {
+                    background: darken(@mainColor, 10%);
+                    color: #fff;
+                }
+            }
+
+            &.active a {
+                background: darken(@mainColor, 10%);
+                color: #fff;
+            }
+        }
+    }
+}
+
+.top-search-form {
+    margin-bottom: 30px;
+    margin-top: -20px;
+    background: #F5F5F5;
+    padding: 15px 0;
+
+    .form-control:focus {
+        .form-control-focus(@mainColor);
+    }
+
+    .btn-primary {
+        background: @mainColor;
+        border-color: @mainColor;
+    }
+}
+
+.breadcrumb {
+    background: #fff;
+    color: #6D6D6D;
+    padding-left: 0;
+    margin-bottom: 15px;
+
+    i {
+        font-size: 15px;
+        padding-right: 5px;
+    }
+
+    .sep {
+        font-size: 10px;
+        font-weight: normal;
+        padding: 0 5px;
+    }
+}
+
+
+
+/* ==========================================================================
+    Content
+    ========================================================================== */
+
+.content { }
+
+ul.doc-category {
+    margin-bottom: 4em;
+    border: 1px solid @borderColor;
+    border-left: 0;
+    border-right: 0;
+    list-style: none;
+    margin: 0 0 50px 0;
+    padding: 0;
+
+    li.doc, li.category {
+        width: 50%;
+        margin: 0;
+        float: left;
+        padding: 2em 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px dotted @borderColor;
+        min-height: 110px;
+
+        &:nth-child(odd) {
+            padding-right: 2em;
+            border-right: 1px dotted @borderColor;
+            clear: both;
+        }
+
+        &:nth-child(even) {
+            padding-left: 2em;
+        }
+
+        h3 {
+            margin: 0;
+            position: relative;
+
+            a {
+                font-size: 16px;
+                display: block;
+                padding-left: 30px;
+            }
+
+            &:before {
+                color: rgba(37, 90, 140, 0.2);
+                font-family: 'FontAwesome';
+                display: inline-block;
+                font-size: 20px;
+                font-weight: normal;
+                line-height: 100%;
+                width: 1.758em;
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "\f0b1";
+            }
+        }
+
+        .inside {
+            padding-left: 30px;
+            padding-top: 10px;
+
+            .feedback {
+                a {
+                    font-weight: bold;
+                    padding: 0 5px;
+                    border-radius: 3px;
+                }
+
+                a.positive {
+                    color: #6a9c1f;
+                    border: 1px solid #6a9c1f;
+                }
+
+                a.negative {
+                    color: #ac2d22;
+                    border: 1px solid #ac2d22;
+
+                }
+            }
+        }
+
+    }
+
+    li.doc {
+        h3:before {
+            content: "\f02d";
+        }
+    }
+}
+
+
+
+/* ==========================================================================
+    Primary Content
+    ========================================================================== */
+
+.main {
+
+    h2.category-title {
+        margin: 15px 0 20px 0;
+        font-weight: 300;
+    }
+
+}
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+    Sidebar
+    ========================================================================== */
+
+.sidebar {
+    h3 {
+        margin: 0 0 15px 0;
+        padding: 0 0 15px 0;
+        font-weight: 300;
+        border-bottom: 1px solid @borderColor;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+
+/* ==========================================================================
+    Posts
+    ========================================================================== */
+
+.hentry {
+    position: relative;
+}
+
+.hentry header, .page-header {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+        margin: 0 0 15px 0;
+        padding: 0 0 15px 0;
+        font-weight: 300;
+        border-bottom: 1px solid @borderColor;
+    }
+}
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content { }
+.hentry footer { }
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar {
+    position: static;
+    background: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    position: fixed;
+    width: 250px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            border-bottom: 1px solid #ECECEC;
+        }
+    }
+
+    a {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        color: #999;
+        padding: 8px 20px;
+
+        &:hover, &:focus {
+            padding-left: 19px;
+            color: @mainColor;
+            text-decoration: none;
+            background-color: transparent;
+            border-left: 1px solid @mainColor;
+        }
+    }
+
+    .active {
+        a, a:hover, a:focus {
+            padding-left: 18px;
+            font-weight: bold;
+            color: @mainColor;
+            background-color: transparent;
+            border-left: 2px solid @mainColor;
+        }
+    }
+}
+
+
+
+/* ==========================================================================
+    Footer
+    ========================================================================== */
+
+.content-info {
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid @borderColor;
+    background: #333;
+    color: #999;
+
+    .widget-area {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+
+    .widget {
+        padding-bottom: 15px;
+
+        h3 {
+            border-bottom: 1px solid #2E2E2E;
+            margin: 0 0 10px 0;
+            padding: 0 0 10px 0;
+            font-weight: 300;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                padding: 3px 0;
+            }
+        }
+
+        a {
+            color: #777;
+        }
+    }
+
+    .copyright {
+        padding-top: 15px;
+        border-top: 1px solid #2E2E2E;
+        text-align: center;
+    }
+}
+
+
+
+/* ==========================================================================
+    WordPress Generated Classes
+    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+    ========================================================================== */
+
+.aligncenter { display: block; margin: 0 auto; }
+.alignleft { float: left; }
+.alignright { float: right; }
+figure.alignnone { margin-left: 0; margin-right: 0; }
+
+
+
+/* ==========================================================================
+    Media Queries
+    ========================================================================== */
+
+@media (min-width: @screen-sm-min) { }
+
+@media (min-width: @screen-md-min) { }
+
+@media (min-width: @screen-lg-min) { }
