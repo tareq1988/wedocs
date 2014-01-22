@@ -884,6 +884,8 @@ a{color:#295}a:hover{color:#1e8449}
 .banner{background:#27ae60;border:none}.banner .navbar-brand{color:#fff}
 .banner .navbar-nav{float:right}.banner .navbar-nav li a{color:#fff;font-size:15px;font-weight:300}.banner .navbar-nav li a:hover{background:#1e8449;color:#fff}
 .banner .navbar-nav li.active a{background:#1e8449;color:#fff}
+.banner .navbar-nav li.open a{color:#777}.banner .navbar-nav li.open a:hover{color:#fff}
+.banner .navbar-nav li.open>a,.banner .navbar-nav li.open>a:focus{background-color:#1e8449;color:#fff}
 .top-search-form{margin-bottom:30px;margin-top:-20px;background:#f5f5f5;padding:15px 0}.top-search-form .form-control:focus:focus{border-color:#27ae60;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(39, 174, 96, 0.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(39, 174, 96, 0.6)}
 .top-search-form .btn-primary{background:#27ae60;border-color:#27ae60}
 .breadcrumb{background:#fff;color:#6d6d6d;padding-left:0;margin-bottom:15px}.breadcrumb i{font-size:15px;padding-right:5px}
@@ -902,6 +904,8 @@ ul.doc-category li.doc h3:before{content:"\f02d"}
 .sidebar ul{list-style:none;margin:0;padding:0}
 .hentry{position:relative}
 .hentry header,.page-header{border:none;margin:0;padding:0}.hentry header h1,.page-header h1{margin:0 0 15px 0;padding:0 0 15px 0;font-weight:300;border-bottom:1px solid #eee}
+.hentry .entry-content img{max-width:100%;border:1px solid #eee;margin-top:10px;margin-bottom:10px;padding:5px;border-radius:5px}
+.hentry .entry-content .page-header{padding-bottom:9px;margin:40px 0 20px;border-bottom:1px solid #eee}
 .bs-sidebar{position:static;background:#f5f5f5;margin:0;padding:0;z-index:99;position:fixed;width:250px}.bs-sidebar ul{margin:0;padding:0}.bs-sidebar ul li{border-bottom:1px solid #ececec}
 .bs-sidebar a{display:block;font-size:13px;font-weight:500;color:#999;padding:8px 20px}.bs-sidebar a:hover,.bs-sidebar a:focus{padding-left:19px;color:#27ae60;text-decoration:none;background-color:transparent;border-left:1px solid #27ae60}
 .bs-sidebar .active a,.bs-sidebar .active a:hover,.bs-sidebar .active a:focus{padding-left:18px;font-weight:bold;color:#27ae60;background-color:transparent;border-left:2px solid #27ae60}

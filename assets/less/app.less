@@ -56,6 +56,22 @@ a {
                 background: darken(@mainColor, 10%);
                 color: #fff;
             }
+
+            &.open {
+
+                a {
+                    color: #777;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+
+                > a, > a:focus {
+                    background-color: darken(@mainColor, 10%);
+                    color: #fff;
+                }
+            }
         }
     }
 }
@@ -253,7 +269,22 @@ ul.doc-category {
 }
 .hentry time { }
 .hentry .byline { }
-.hentry .entry-content { }
+.hentry .entry-content {
+    img {
+        max-width: 100%;
+        border: 1px solid @borderColor;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .page-header {
+        padding-bottom: 9px;
+        margin: 40px 0 20px;
+        border-bottom: 1px solid #eee;
+    }
+}
 .hentry footer { }
 
 /*
