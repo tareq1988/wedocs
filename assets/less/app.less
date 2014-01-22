@@ -40,39 +40,77 @@ a {
     .navbar-nav {
         float: right;
 
-        li {
+        li > a {
+            color: #fff;
+
+            &:hover, &:focus {
+                color: #fff;
+                background-color: darken(@mainColor, 10%);
+            }
+        }
+
+        .active {
+            a, a:hover, a:focus {
+                color: #fff;
+                background-color: darken(@mainColor, 10%);
+            }
+        }
+
+        .dropdown-menu {
             a {
-                color: #fff;
-                font-size: 15px;
-                font-weight: 300;
+                background-color: #fff;
+                color: #777;
+            }
 
-                &:hover {
-                    background: darken(@mainColor, 10%);
+            .active {
+                a, a:hover {
                     color: #fff;
-                }
-            }
-
-            &.active a {
-                background: darken(@mainColor, 10%);
-                color: #fff;
-            }
-
-            &.open {
-
-                a {
-                    color: #777;
-
-                    &:hover {
-                        color: #fff;
-                    }
-                }
-
-                > a, > a:focus {
                     background-color: darken(@mainColor, 10%);
-                    color: #fff;
                 }
             }
         }
+
+        .open {
+            a:hover, a:focus {
+                color: #fff;
+                background-color: darken(@mainColor, 10%);
+            }
+        }
+
+        // li {
+        //     > a {
+        //         color: #fff;
+        //         font-size: 15px;
+        //         font-weight: 300;
+
+        //         &:hover {
+        //             background: darken(@mainColor, 10%);
+        //             color: #fff;
+        //         }
+        //     }
+
+        //     .dropdown-menu {
+        //         li {
+        //             > a {
+        //                 background-color: #fff;
+        //                 color: #777;
+        //             }
+        //         }
+        //     }
+
+        //     &.active > a {
+        //         background: darken(@mainColor, 10%);
+        //         color: #fff;
+        //     }
+
+        //     &.open {
+
+        //         > a, > a:focus {
+        //             background-color: darken(@mainColor, 10%);
+        //             color: #fff;
+        //         }
+        //     }
+        // }
     }
 }
 
