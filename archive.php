@@ -16,7 +16,9 @@ if ( $categories ) {
 $args = array(
     'post_type' => 'post',
     'category__in' => array( $parent_cat->term_id ),
-    'posts_per_page' => -1
+    'posts_per_page' => -1,
+    'order' => 'ASC',
+    'orderby' => 'menu_order'
 );
 
 // The Query
