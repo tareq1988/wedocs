@@ -24,6 +24,7 @@ function wedevs_docs_scripts() {
     wp_enqueue_script('jquery');
     wp_enqueue_script('bootstrap-tooltip', get_template_directory_uri() . '/assets/js/plugins/bootstrap/tooltip.js', array(), false, true);
     wp_enqueue_script('bootstrap-scrollspy', get_template_directory_uri() . '/assets/js/plugins/bootstrap/scrollspy.js', array(), false, true);
+    wp_enqueue_script('bootstrap-dropdown', get_template_directory_uri() . '/assets/js/plugins/bootstrap/dropdown.js', array(), false, true);
     wp_enqueue_script('wedevs-docs-scripts');
 }
 
