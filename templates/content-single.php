@@ -45,8 +45,6 @@
 
                 </div>
 
-                <?php wdevs_docs_share_buttons(); ?>
-
             </div><!-- .col-md-# -->
     </article>
 <?php endwhile; ?>
