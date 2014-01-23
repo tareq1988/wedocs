@@ -2,13 +2,13 @@
 /**
  * Roots initial setup and constants
  */
-function wedevs_docs_setup() {
+function wedocs_setup() {
     // Make theme available for translation
-    load_theme_textdomain( 'wedevs-docs', get_template_directory() . '/lang' );
+    load_theme_textdomain( 'wedocs', get_template_directory() . '/lang' );
 
     // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
     register_nav_menus( array(
-        'primary_navigation' => __( 'Primary Navigation', 'wedevs-docs' ),
+        'primary_navigation' => __( 'Primary Navigation', 'wedocs' ),
     ) );
 
     // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
@@ -23,4 +23,4 @@ function wedevs_docs_setup() {
     add_editor_style('/assets/css/editor-style.css');
 }
 
-add_action('after_setup_theme', 'wedevs_docs_setup');
+add_action( 'after_setup_theme', 'wedocs_setup' );

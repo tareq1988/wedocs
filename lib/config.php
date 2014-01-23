@@ -15,8 +15,8 @@ define( 'POST_EXCERPT_LENGTH', 20); // Length in words for excerpt_length filter
 /**
  * .main classes
  */
-function roots_main_class() {
-    if ( wedevs_display_sidebar() ) {
+function wedocs_main_class() {
+    if ( wedocs_display_sidebar() ) {
         // Classes on pages with the sidebar
         $class = 'col-sm-8';
     } else {
@@ -30,7 +30,7 @@ function roots_main_class() {
 /**
  * .sidebar classes
  */
-function roots_sidebar_class() {
+function wedocs_sidebar_class() {
     return 'col-sm-4';
 }
 
@@ -39,7 +39,7 @@ function roots_sidebar_class() {
  *
  * See lib/sidebar.php for more details
  */
-function wedevs_display_sidebar() {
+function wedocs_display_sidebar() {
     $sidebar_config = new Roots_Sidebar(
         /**
          * Conditional tag checks (http://codex.wordpress.org/Conditional_Tags)
@@ -66,7 +66,7 @@ function wedevs_display_sidebar() {
         )
     );
 
-    return apply_filters('wedevs_display_sidebar', $sidebar_config->display);
+    return apply_filters('wedocs_display_sidebar', $sidebar_config->display);
 }
 
 /**
@@ -77,5 +77,5 @@ function wedevs_display_sidebar() {
  * Default: 1140px is the default Bootstrap container width.
  */
 if ( !isset( $content_width ) ) {
-    $content_width = 1140;
+    $content_width = 640;
 }

@@ -4,7 +4,7 @@
  */
 
 
-function wedevs_docs_custom_breadcrumbs() {
+function wedocs_breadcrumbs() {
 
     $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
     $delimiter = '<i class="fa fa-chevron-right sep"></i>'; // delimiter between crumbs
@@ -108,42 +108,4 @@ function wedevs_docs_custom_breadcrumbs() {
         echo '</div>';
 
     }
-}
-
-
-function wdevs_docs_share_buttons() {
-    ?>
-    <ul class="list-inline">
-        <li class="facebook">
-            <div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
-        </li>
-        <li class="twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button"><?php _e( 'Tweet', 'wedevs-docs' ); ?></a>
-        </li>
-        <li class="gplus">
-            <div class="g-plusone" data-size="medium"></div>
-        </li>
-    </ul>
-
-
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=150649678345378";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-    <!-- Place this tag after the last +1 button tag. -->
-    <script type="text/javascript">
-      (function() {
-        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-        po.src = 'https://apis.google.com/js/plusone.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
-    <?php
 }

@@ -5,7 +5,7 @@
 function wedevs_docs_widgets_init() {
     // Sidebars
     register_sidebar(array(
-        'name'          => __('Primary', 'wedevs-docs'),
+        'name'          => __('Primary', 'wedocs'),
         'id'            => 'sidebar-primary',
         'before_widget' => '<section class="widget %1$s %2$s">',
         'after_widget'  => '</section>',
@@ -14,7 +14,7 @@ function wedevs_docs_widgets_init() {
     ));
 
     register_sidebar(array(
-        'name'          => __('Footer 1', 'wedevs-docs'),
+        'name'          => __('Footer 1', 'wedocs'),
         'id'            => 'sidebar-footer',
         'before_widget' => '<section class="widget col-md-3 %1$s %2$s">',
         'after_widget'  => '</section>',

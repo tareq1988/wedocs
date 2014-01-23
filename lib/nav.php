@@ -6,11 +6,11 @@
  *   <li id="menu-item-8" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8"><a href="/">Home</a></li>
  *   <li id="menu-item-9" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9"><a href="/sample-page/">Sample Page</a></l
  *
- * WeDevs_Docs_Nav_Walker example output:
+ * WeDocs_Nav_Walker example output:
  *   <li class="menu-home"><a href="/">Home</a></li>
  *   <li class="menu-sample-page"><a href="/sample-page/">Sample Page</a></li>
  */
-class WeDevs_Docs_Nav_Walker extends Walker_Nav_Menu {
+class WeDocs_Nav_Walker extends Walker_Nav_Menu {
     function check_current($classes) {
         return preg_match('/(current[-_])|active|dropdown/', $classes);
     }
@@ -34,7 +34,7 @@ class WeDevs_Docs_Nav_Walker extends Walker_Nav_Menu {
             $item_html = preg_replace('/<a[^>]*>(.*)<\/a>/iU', '$1', $item_html);
         }
 
-        $item_html = apply_filters('roots_wp_nav_menu_item', $item_html);
+        $item_html = apply_filters('wedocs_wp_nav_menu_item', $item_html);
         $output .= $item_html;
     }
 
@@ -53,7 +53,7 @@ class WeDevs_Docs_Nav_Walker extends Walker_Nav_Menu {
  * Remove the id="" on nav menu items
  * Return 'menu-slug' for nav menu classes
  */
-function roots_nav_menu_css_class($classes, $item) {
+function wedocs_nav_menu_css_class($classes, $item) {
     $slug = sanitize_title($item->title);
     $classes = preg_replace('/(current(-menu-|[-_]page[-_])(item|parent|ancestor))/', 'active', $classes);
     $classes = preg_replace('/^((menu|page)[-_\w+]+)+/', '', $classes);
@@ -64,30 +64,30 @@ function roots_nav_menu_css_class($classes, $item) {
 
     return array_filter($classes, 'is_element_empty');
 }
-add_filter('nav_menu_css_class', 'roots_nav_menu_css_class', 10, 2);
+add_filter('nav_menu_css_class', 'wedocs_nav_menu_css_class', 10, 2);
 add_filter('nav_menu_item_id', '__return_null');
 
 /**
  * Clean up wp_nav_menu_args
  *
  * Remove the container
- * Use WeDevs_Docs_Nav_Walker() by default
+ * Use WeDocs_Nav_Walker() by default
  */
-function wedevs_docs_nav_menu_args($args = '') {
-    $wedevs_docs_nav_menu_args['container'] = false;
+function wedocs_nav_menu_args($args = '') {
+    $wedocs_nav_menu_args['container'] = false;
 
     if (!$args['items_wrap']) {
-        $wedevs_docs_nav_menu_args['items_wrap'] = '<ul class="%2$s">%3$s</ul>';
+        $wedocs_nav_menu_args['items_wrap'] = '<ul class="%2$s">%3$s</ul>';
     }
 
     if (current_theme_supports('bootstrap-top-navbar') && !$args['depth']) {
-        $wedevs_docs_nav_menu_args['depth'] = 2;
+        $wedocs_nav_menu_args['depth'] = 2;
     }
 
     if (!$args['walker']) {
-        $wedevs_docs_nav_menu_args['walker'] = new WeDevs_Docs_Nav_Walker();
+        $wedocs_nav_menu_args['walker'] = new WeDocs_Nav_Walker();
     }
 
-    return array_merge($args, $wedevs_docs_nav_menu_args);
+    return array_merge($args, $wedocs_nav_menu_args);
 }
-add_filter('wp_nav_menu_args', 'wedevs_docs_nav_menu_args');
+add_filter('wp_nav_menu_args', 'wedocs_nav_menu_args');

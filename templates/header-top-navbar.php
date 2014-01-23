@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
+				<span class="sr-only"><?php _e( 'Toggle navigation', 'wedocs' ); ?></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -12,8 +12,8 @@
 
 		<nav class="collapse navbar-collapse" role="navigation">
 			<?php
-				if (has_nav_menu('primary_navigation')) :
-					wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
+				if ( has_nav_menu('primary_navigation') ) :
+					wp_nav_menu( array( 'theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav') );
 				endif;
 			?>
 		</nav>
@@ -26,16 +26,16 @@
 	        <div class="col-sm-10 col-sm-offset-2">
 				<form role="search" method="get" class="search-form form-inline" action="<?php echo home_url('/'); ?>">
 				    <div class="form-group col-md-5">
-				        <input type="search" value="<?php if (is_search()) { echo get_search_query(); } ?>" name="s" class="search-field form-control" placeholder="<?php _e('Search', 'roots'); ?> <?php bloginfo('name'); ?>">
-				        <label class="hide"><?php _e('Search for:', 'wedevs-docs'); ?></label>
+				        <input type="search" value="<?php if (is_search()) { echo get_search_query(); } ?>" name="s" class="search-field form-control" placeholder="<?php _e('Search', 'wedocs'); ?> <?php bloginfo('name'); ?>">
+				        <label class="hide"><?php _e('Search for:', 'wedocs'); ?></label>
 				    </div>
 
 				    <div class="form-group col-md-3">
-				    	<?php wp_dropdown_categories( array( 'show_option_all' => __( 'All Documents', 'wedevs-docs' ), 'hide_empty' => false, 'hierarchical' => true, 'class' => 'form-control' ) ); ?>
+				    	<?php wp_dropdown_categories( array( 'show_option_all' => __( 'All Documents', 'wedocs' ), 'hide_empty' => false, 'hierarchical' => true, 'class' => 'form-control' ) ); ?>
 				    </div>
 
 				    <div class="form-group col-md-2">
-				    	<button type="submit" class="search-submit btn btn-primary"><?php _e('Search', 'wedevs-docs'); ?></button>
+				    	<button type="submit" class="search-submit btn btn-primary"><?php _e('Search', 'wedocs'); ?></button>
 				    </div>
 				</form>
 	        </div>
@@ -44,7 +44,7 @@
 
 	<div class="row">
 		<div class="col-md-12">
-			<?php wedevs_docs_custom_breadcrumbs(); ?>
+			<?php wedocs_breadcrumbs(); ?>
 		</div>
 	</div>
 </div>
