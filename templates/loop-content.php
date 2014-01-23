@@ -9,8 +9,8 @@
             $positive = (int) get_post_meta( $post->ID, 'positive', true );
             $negative = (int) get_post_meta( $post->ID, 'negative', true );
             ?>
-            <a href="#" class="tip positive" title="<?php printf( __( '%d people found this useful', 'wedevs-docs' ), $positive ); ?>"><i class="fa fa-check-square-o"></i> <?php echo $positive; ?></a>
-            <a href="#" class="tip negative" title="<?php printf( __( '%d people found this not useful', 'wedevs-docs' ), $negative ); ?>"><i class="fa fa-times"></i> <?php echo $negative; ?></a>
+            <a href="#" class="tip positive" title="<?php printf( __( '%d people found this useful', 'wedocs' ), $positive ); ?>"><i class="fa fa-check-square-o"></i> <?php echo $positive; ?></a>
+            <a href="#" class="tip negative" title="<?php printf( __( '%d people found this not useful', 'wedocs' ), $negative ); ?>"><i class="fa fa-times"></i> <?php echo $negative; ?></a>
         </div>
     </div>
 </li>

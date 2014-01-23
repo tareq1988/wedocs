@@ -148,6 +148,15 @@ a {
     }
 }
 
+.container .jumbotron {
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 0;
+
+    h1 {
+        font-weight: 300;
+    }
+}
 
 
 /* ==========================================================================
@@ -429,7 +438,6 @@ ul.doc-category {
     .copyright {
         padding-top: 15px;
         border-top: 1px solid #2E2E2E;
-        text-align: center;
     }
 }
 
@@ -451,8 +459,14 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
     Media Queries
     ========================================================================== */
 
-@media (min-width: @screen-sm-min) { }
+@media (min-width: @screen-sm-min) {}
 
 @media (min-width: @screen-md-min) { }
 
 @media (min-width: @screen-lg-min) { }
+
+@media (max-width: 767px) {
+    .banner .navbar-nav {
+        float: none;
+    }
+}

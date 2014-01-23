@@ -1,3 +1,13 @@
+<?php if ( $headline = get_theme_mod( 'wedocs_home_text' ) ) { ?>
+    <div class="jumbotron">
+        <h1><?php echo esc_html( $headline ); ?></h1>
+
+        <?php if ( $tagline = get_theme_mod( 'wedocs_home_text_tag' ) ) { ?>
+            <p><?php echo esc_html( $tagline ); ?></p>
+        <?php } ?>
+    </div>
+<?php } ?>
+
 <?php
 $categories = get_terms( 'category', array('hide_empty' => false, 'orderby' => 'name', 'parent' => 0) );
 

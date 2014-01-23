@@ -109,3 +109,16 @@ function wedocs_breadcrumbs() {
 
     }
 }
+
+/**
+ * Footer credits.
+ */
+function wedocs_display_credits() {
+    $text = '<a href="http://wordpress.org/" rel="generator">' . sprintf( __( 'Proudly powered by %s', 'wedocs' ), 'WordPress' ) . '</a>';
+    $text .= '<span class="sep"> | </span>';
+    $text .= sprintf( __( 'Theme: %1$s by %2$s', 'wedocs' ), '<a href="http://wedevs.com/theme/wedocs">weDocs</a>', '<a href="http://tareq.wedevs.com/" rel="designer">Tareq Hasan</a>' );
+
+    echo '<div class="pull-right">' . apply_filters( 'wedocs_credits_text', $text ) . '</div>';
+}
+
+add_action( 'wedocs_credits', 'wedocs_display_credits' );
