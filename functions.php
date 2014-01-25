@@ -25,7 +25,6 @@ function wedocs_ajax_feedback() {
     $post_id = intval( $_POST['post_id'] );
     $type = in_array( $_POST['type'], array( 'positive', 'negative' ) ) ? $_POST['type'] : false;
 
-    sleep(3);
     // check previous response
     if ( in_array( $post_id, $previous ) ) {
         $message = sprintf( $template, 'danger', __( 'Sorry, you\'ve already recorded your feedback!', 'wedocs' ) );
