@@ -8,7 +8,7 @@ function wedocs_breadcrumbs() {
 
     $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
     $delimiter = '<i class="fa fa-chevron-right sep"></i>'; // delimiter between crumbs
-    $home = __( 'Home', 'wedevs-docs' ); // text for the 'Home' link
+    $home = __( 'Home', 'wedocs' ); // text for the 'Home' link
     $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
     $before = '<span class="current">'; // tag before the current crumb
     $after = '</span>'; // tag after the current crumb
@@ -30,7 +30,7 @@ function wedocs_breadcrumbs() {
             echo $before . single_cat_title('', false) . $after;
 
         } elseif ( is_search() ) {
-            echo $before . __( 'Search results for', 'wedevs-docs' ) . ' "' . get_search_query() . '"' . $after;
+            echo $before . __( 'Search results for', 'wedocs' ) . ' "' . get_search_query() . '"' . $after;
 
         } elseif ( is_day() ) {
             echo '<a href="' . get_year_link(get_the_time('Y')) . '">' . get_the_time('Y') . '</a> ' . $delimiter . ' ';
@@ -88,20 +88,20 @@ function wedocs_breadcrumbs() {
             if ($showCurrent == 1) echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
 
         } elseif ( is_tag() ) {
-            echo $before . __( 'Posts tagged', 'wedevs-docs' ) . ' "' . single_tag_title('', false) . '"' . $after;
+            echo $before . __( 'Posts tagged', 'wedocs' ) . ' "' . single_tag_title('', false) . '"' . $after;
 
         } elseif ( is_author() ) {
              global $author;
             $userdata = get_userdata($author);
-            echo $before . __( 'Articles posted by', 'wedevs-docs' ) . ' ' . $userdata->display_name . $after;
+            echo $before . __( 'Articles posted by', 'wedocs' ) . ' ' . $userdata->display_name . $after;
 
         } elseif ( is_404() ) {
-            echo $before . __( 'Error 404', 'wedevs-docs' ) . $after;
+            echo $before . __( 'Error 404', 'wedocs' ) . $after;
         }
 
         if ( get_query_var('paged') ) {
             if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-            echo __( 'Page', 'wedevs-docs' ) . ' ' . get_query_var('paged');
+            echo __( 'Page', 'wedocs' ) . ' ' . get_query_var('paged');
             if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
         }
 
