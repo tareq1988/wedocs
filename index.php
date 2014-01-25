@@ -1,9 +1,12 @@
-<?php if ( $headline = get_theme_mod( 'wedocs_home_text' ) ) { ?>
+<?php
+global $allowedtags;
+
+if ( $headline = get_theme_mod( 'wedocs_home_text' ) ) { ?>
     <div class="jumbotron">
-        <h1><?php echo esc_html( $headline ); ?></h1>
+        <h1><?php echo wp_kses( $headline, $allowedtags ); ?></h1>
 
         <?php if ( $tagline = get_theme_mod( 'wedocs_home_text_tag' ) ) { ?>
-            <p><?php echo esc_html( $tagline ); ?></p>
+            <p><?php echo wp_kses( $tagline, $allowedtags ); ?></p>
         <?php } ?>
     </div>
 <?php } ?>
