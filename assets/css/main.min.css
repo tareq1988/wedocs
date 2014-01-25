@@ -896,9 +896,7 @@ ul.doc-category{margin-bottom:4em;border:1px solid #eee;border-left:0;border-rig
 ul.doc-category li.doc:nth-child(even),ul.doc-category li.category:nth-child(even){padding-left:2em}
 ul.doc-category li.doc h3,ul.doc-category li.category h3{margin:0;position:relative}ul.doc-category li.doc h3 a,ul.doc-category li.category h3 a{font-size:16px;display:block;padding-left:30px}
 ul.doc-category li.doc h3:before,ul.doc-category li.category h3:before{color:rgba(37,90,140,0.2);font-family:'FontAwesome';display:inline-block;font-size:20px;font-weight:normal;line-height:100%;width:1.758em;position:absolute;top:0;left:0;content:"\f0b1"}
-ul.doc-category li.doc .inside,ul.doc-category li.category .inside{padding-left:30px;padding-top:10px}ul.doc-category li.doc .inside .feedback a,ul.doc-category li.category .inside .feedback a{font-weight:bold;padding:0 5px;border-radius:3px}
-ul.doc-category li.doc .inside .feedback a.positive,ul.doc-category li.category .inside .feedback a.positive{color:#6a9c1f;border:1px solid #6a9c1f}
-ul.doc-category li.doc .inside .feedback a.negative,ul.doc-category li.category .inside .feedback a.negative{color:#ac2d22;border:1px solid #ac2d22}
+ul.doc-category li.doc .inside,ul.doc-category li.category .inside{padding-left:30px;padding-top:10px}
 ul.doc-category li.doc h3:before{content:"\f02d"}
 .main h2.category-title{margin:15px 0 20px 0;font-weight:300}
 .gallery-row{padding:15px 0}
@@ -908,6 +906,9 @@ ul.doc-category li.doc h3:before{content:"\f02d"}
 .hentry header,.page-header{border:none;margin:0;padding:0}.hentry header h1,.page-header h1{margin:0 0 15px 0;padding:0 0 15px 0;font-weight:300;border-bottom:1px solid #eee}
 .hentry .entry-content img{max-width:100%;border:1px solid #eee;margin-top:10px;margin-bottom:10px;padding:5px;border-radius:5px}
 .hentry .entry-content .page-header{padding-bottom:9px;margin:40px 0 20px;border-bottom:1px solid #eee}
+.wedoc-feedback-wrap{padding-top:15px}.wedoc-feedback-wrap a{font-weight:bold;padding:0 5px;border-radius:3px}
+.wedoc-feedback-wrap a.positive{color:#6a9c1f;border:1px solid #6a9c1f}
+.wedoc-feedback-wrap a.negative{color:#ac2d22;border:1px solid #ac2d22}
 .bs-sidebar{position:static;background:#f5f5f5;margin:0;padding:0;z-index:99;position:fixed;width:250px}.bs-sidebar ul{margin:0;padding:0}.bs-sidebar ul li{border-bottom:1px solid #ececec}
 .bs-sidebar a{display:block;font-size:13px;font-weight:500;color:#999;padding:8px 20px}.bs-sidebar a:hover,.bs-sidebar a:focus{padding-left:19px;color:#27ae60;text-decoration:none;background-color:transparent;border-left:1px solid #27ae60}
 .bs-sidebar .active a,.bs-sidebar .active a:hover,.bs-sidebar .active a:focus{padding-left:18px;font-weight:bold;color:#27ae60;background-color:transparent;border-left:2px solid #27ae60}

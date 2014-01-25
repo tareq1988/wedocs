@@ -42,8 +42,9 @@
 
                     echo $content;
                     ?>
-
                 </div>
+
+                <?php get_template_part( 'templates/content', 'feedback' ); ?>
 
             </div><!-- .col-md-# -->
     </article>

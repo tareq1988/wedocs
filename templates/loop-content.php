@@ -4,13 +4,6 @@
     <div class="inside">
         <?php the_excerpt(); ?>
 
-        <div class="feedback">
-            <?php
-            $positive = (int) get_post_meta( $post->ID, 'positive', true );
-            $negative = (int) get_post_meta( $post->ID, 'negative', true );
-            ?>
-            <a href="#" class="tip positive" title="<?php printf( __( '%d people found this useful', 'wedocs' ), $positive ); ?>"><i class="fa fa-check-square-o"></i> <?php echo $positive; ?></a>
-            <a href="#" class="tip negative" title="<?php printf( __( '%d people found this not useful', 'wedocs' ), $negative ); ?>"><i class="fa fa-times"></i> <?php echo $negative; ?></a>
-        </div>
+        <?php get_template_part( 'templates/content', 'feedback' ); ?>
     </div>
 </li>

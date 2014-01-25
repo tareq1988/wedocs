@@ -28,6 +28,10 @@ function wedocs_scripts() {
     wp_enqueue_script( 'bootstrap-dropdown', get_template_directory_uri() . '/assets/js/plugins/bootstrap/dropdown.js', array(), false, true);
     wp_enqueue_script( 'bootstrap-collapse', get_template_directory_uri() . '/assets/js/plugins/bootstrap/collapse.js', array(), false, true);
     wp_enqueue_script( 'wedocs-scripts' );
+    wp_localize_script( 'wedocs-scripts', 'wedocs', array(
+        'ajaxurl' => admin_url( 'admin-ajax.php' ),
+        'nonce' => wp_create_nonce( 'wedocs-ajax' )
+    ) );
 }
 
 add_action('wp_enqueue_scripts', 'wedocs_scripts', 100);

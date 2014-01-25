@@ -223,25 +223,6 @@ ul.doc-category {
         .inside {
             padding-left: 30px;
             padding-top: 10px;
-
-            .feedback {
-                a {
-                    font-weight: bold;
-                    padding: 0 5px;
-                    border-radius: 3px;
-                }
-
-                a.positive {
-                    color: #6a9c1f;
-                    border: 1px solid #6a9c1f;
-                }
-
-                a.negative {
-                    color: #ac2d22;
-                    border: 1px solid #ac2d22;
-
-                }
-            }
         }
 
     }
@@ -317,6 +298,7 @@ ul.doc-category {
 .hentry time { }
 .hentry .byline { }
 .hentry .entry-content {
+
     img {
         max-width: 100%;
         border: 1px solid @borderColor;
@@ -333,6 +315,27 @@ ul.doc-category {
     }
 }
 .hentry footer { }
+
+.wedoc-feedback-wrap {
+    padding-top: 15px;
+
+    a {
+        font-weight: bold;
+        padding: 0 5px;
+        border-radius: 3px;
+    }
+
+    a.positive {
+        color: #6a9c1f;
+        border: 1px solid #6a9c1f;
+    }
+
+    a.negative {
+        color: #ac2d22;
+        border: 1px solid #ac2d22;
+
+    }
+}
 
 /*
  * Side navigation
