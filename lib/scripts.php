@@ -23,10 +23,7 @@ function wedocs_scripts() {
     wp_register_script( 'wedocs-scripts', get_template_directory_uri() . '/assets/js/scripts.js', array(), false, true);
     wp_enqueue_script( 'modernizr');
     wp_enqueue_script( 'jquery');
-    wp_enqueue_script( 'bootstrap-tooltip', get_template_directory_uri() . '/assets/js/plugins/bootstrap/tooltip.js', array(), false, true);
-    wp_enqueue_script( 'bootstrap-scrollspy', get_template_directory_uri() . '/assets/js/plugins/bootstrap/scrollspy.js', array(), false, true);
-    wp_enqueue_script( 'bootstrap-dropdown', get_template_directory_uri() . '/assets/js/plugins/bootstrap/dropdown.js', array(), false, true);
-    wp_enqueue_script( 'bootstrap-collapse', get_template_directory_uri() . '/assets/js/plugins/bootstrap/collapse.js', array(), false, true);
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/plugins/bootstrap.min.js', array(), false, true);
     wp_enqueue_script( 'wedocs-scripts' );
     wp_localize_script( 'wedocs-scripts', 'wedocs', array(
         'ajaxurl' => admin_url( 'admin-ajax.php' ),
