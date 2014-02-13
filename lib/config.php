@@ -77,5 +77,5 @@ function wedocs_display_sidebar() {
  * Default: 1140px is the default Bootstrap container width.
  */
 if ( !isset( $content_width ) ) {
-    $content_width = 640;
+    $content_width = 835;
 }
