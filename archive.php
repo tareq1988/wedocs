@@ -14,11 +14,11 @@ if ( $categories ) {
 
 // WP_Query arguments
 $args = array(
-    'post_type' => 'post',
-    'category__in' => array( $parent_cat->term_id ),
+    'post_type'      => 'post',
+    'category__in'   => array( $parent_cat->term_id ),
     'posts_per_page' => -1,
-    'order' => 'ASC',
-    'orderby' => 'post_date'
+    'order'          => 'ASC',
+    'orderby'        => 'post_date'
 );
 
 // The Query
