@@ -226,9 +226,27 @@ ul.doc-category {
 
             ul.child-cats {
                 padding: 15px 0 0 20px;
+                clear: both;
+                display: block;
 
                 > li {
                     padding-bottom: 15px;
+                    float: left;
+                    width: 48%;
+                    padding-right: 2%;
+                    list-style: none;
+
+                    &:nth-child(2n+1) {
+                        clear: both;
+                    }
+
+                    > a {
+                        font-weight: bold;
+                    }
+
+                    ul.children {
+                        padding: 5px 0 0 15px;
+                    }
                 }
             }
         }
