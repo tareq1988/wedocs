@@ -30,11 +30,8 @@
 				        <label class="hide"><?php _e('Search for:', 'wedocs'); ?></label>
 				    </div>
 
-				    <div class="form-group col-md-3">
+				    <div class="form-group col-md-5">
 				    	<?php wp_dropdown_categories( array( 'show_option_all' => __( 'All Documents', 'wedocs' ), 'hide_empty' => false, 'hierarchical' => true, 'class' => 'form-control', 'id' => 'wedevs-category' ) ); ?>
-				    </div>
-
-				    <div class="form-group col-md-2">
 				    	<button type="submit" class="search-submit btn btn-primary"><?php _e('Search', 'wedocs'); ?></button>
 				    </div>
 				</form>
