@@ -1,0 +1,301 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: weDocs\n"
+"POT-Creation-Date: 2015-04-11 01:58-0800\n"
+"PO-Revision-Date: 2015-04-12 01:54-0800\n"
+"Last-Translator: Meysam <meysam@jafarii.ir>\n"
+"Language-Team: Meysam <meysam@jafarii.ir>\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.1\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:4
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr ""
+
+#: 404.php:7
+msgid "It looks like this was the result of either:"
+msgstr ""
+
+#: 404.php:9
+msgid "a mistyped address"
+msgstr ""
+
+#: 404.php:10
+msgid "an out-of-date link"
+msgstr "لینک های منقضی"
+
+#: archive.php:30 search.php:5
+msgid "Documents"
+msgstr "مستندات"
+
+#: archive.php:49 search.php:17
+msgid "Nothing found!"
+msgstr "پیدا نشد!"
+
+#: base.php:6
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+
+#: functions.php:30
+msgid "Sorry, you've already recorded your feedback!"
+msgstr "شما قبلا برای این نوشته رای  ارسال کرده اید!"
+
+#: functions.php:45
+msgid "Thanks for your feedback!"
+msgstr "از رای شما متشکریم!"
+
+#: lib/cleanup.php:193
+msgid "Read more &rarr;"
+msgstr "ادامه &larr;"
+
+#: lib/custom.php:11
+msgid "Home"
+msgstr "خانه"
+
+#: lib/custom.php:33
+msgid "Search results for"
+msgstr "نتیجه جستجو"
+
+#: lib/custom.php:91
+msgid "Posts tagged"
+msgstr "برچسب های نوشته"
+
+#: lib/custom.php:96
+msgid "Articles posted by"
+msgstr "ارسال نوشته"
+
+#: lib/custom.php:99
+msgid "Error 404"
+msgstr "خطا 404"
+
+#: lib/custom.php:104
+msgid "Page"
+msgstr "صفحه"
+
+#: lib/custom.php:117
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "با افتخار نیروگرفته توسط %s"
+
+#: lib/custom.php:119
+#, php-format
+msgid "Theme: %1$s by %2$s"
+msgstr "قالب: %1$s by %2$s"
+
+#: lib/customizer.php:18
+msgid "Theme Logo"
+msgstr "لگو قالب"
+
+#: lib/customizer.php:20
+msgid "Upload your logo to replace the default Logo (dimension : 220 X 45)"
+msgstr "آپلود و ویرایش لگو پیش فرض(اندازه : 220 X 45)"
+
+#: lib/customizer.php:26
+msgid "Upload Logo"
+msgstr "آپلود لوگو"
+
+#: lib/customizer.php:33
+msgid "weDocs Options"
+msgstr "تنظیمات قالب"
+
+#: lib/customizer.php:43
+msgid "Homepage Text - header"
+msgstr "متن عنوان صفحه"
+
+#: lib/customizer.php:55
+msgid "Homepage Text - tagline"
+msgstr "برچسب عنوان"
+
+#: lib/customizer.php:63
+#, php-format
+msgid "&copy; %d. All rights are reserved."
+msgstr ""
+
+#: lib/customizer.php:67
+msgid "Footer Text"
+msgstr "متن پاورقی"
+
+#: lib/init.php:11
+msgid "Primary Navigation"
+msgstr "منو اصلی"
+
+#: lib/titles.php:11
+msgid "Latest Posts"
+msgstr "آخرین مطالب"
+
+#: lib/titles.php:22
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: lib/titles.php:24
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: lib/titles.php:26
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: lib/titles.php:29
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: lib/titles.php:34
+#, php-format
+msgid "Search Results for %s"
+msgstr ""
+
+#: lib/titles.php:36
+msgid "Not Found"
+msgstr "پیدا نشد!"
+
+#: lib/widgets.php:8
+msgid "Primary"
+msgstr "دومین"
+
+#: lib/widgets.php:17
+msgid "Footer 1"
+msgstr "پاورقی 1"
+
+#: search.php:26
+msgid "&larr; Older posts"
+msgstr "&larr; نوشته های قدیمی"
+
+#: search.php:27
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#: templates/comment.php:4
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: templates/comment.php:5
+msgid "(Edit)"
+msgstr "(ویرایش)"
+
+#: templates/comment.php:9
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: templates/comments.php:8
+#, php-format
+msgid "One Response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/comments.php:18
+msgid "&larr; Older comments"
+msgstr ""
+
+#: templates/comments.php:21
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: templates/comments.php:29 templates/comments.php:38
+msgid "Comments are closed."
+msgstr "نظرات بسته شده."
+
+#: templates/comments.php:45
+msgid "Leave a Reply"
+msgstr "پاسخ"
+
+#: templates/comments.php:45
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "پاسخ برای %s"
+
+#: templates/comments.php:48
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: templates/comments.php:53
+#, php-format
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr ""
+
+#: templates/comments.php:54
+msgid "Log out of this account"
+msgstr ""
+
+#: templates/comments.php:54
+msgid "Log out &raquo;"
+msgstr "خروج &raquo"
+
+#: templates/comments.php:58
+msgid "Name"
+msgstr "نام"
+
+#: templates/comments.php:58 templates/comments.php:62
+msgid " (required)"
+msgstr "الزامی"
+
+#: templates/comments.php:62
+msgid "Email (will not be published)"
+msgstr "ایمیل (منتشر نخواهد شد)"
+
+#: templates/comments.php:66
+msgid "Website"
+msgstr "وب سایت"
+
+#: templates/comments.php:71
+msgid "Comment"
+msgstr "نظرات"
+
+#: templates/comments.php:74
+msgid "Submit Comment"
+msgstr "ارسال نظر"
+
+#: templates/content-feedback.php:8
+#, php-format
+msgid "%d person found this useful"
+msgid_plural "%d persons found this useful"
+msgstr[0] "آرای مثبت %d"
+
+#: templates/content-feedback.php:8 templates/content-feedback.php:9
+msgid "No votes yet"
+msgstr "هیچ رای ثبت نشده!"
+
+#: templates/content-feedback.php:9
+#, php-format
+msgid "%d person found this not useful"
+msgid_plural "%d persons found this not useful"
+msgstr[0] "آرای منفی %d"
+
+#: templates/entry-meta.php:2
+msgid "By"
+msgstr "به وسیله"
+
+#: templates/header-top-navbar.php:5
+msgid "Toggle navigation"
+msgstr "ناوبری"
+
+#: templates/header-top-navbar.php:29 templates/header-top-navbar.php:38
+#: templates/searchform.php:3 templates/searchform.php:6
+msgid "Search"
+msgstr "جستجو "
+
+#: templates/header-top-navbar.php:30 templates/searchform.php:4
+msgid "Search for:"
+msgstr "جستجو برای"
+
+#: templates/header-top-navbar.php:34
+msgid "All Documents"
+msgstr "تمام مستندات"

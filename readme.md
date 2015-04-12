@@ -21,10 +21,8 @@ demo en: [docs.wedevs.com](http://docs.wedevs.com)
 
 ### Change RTL
 
-*  add sass rtl-bootstrap 
-*  add language fa.po
-*  change php files themplate
-*  fix problem place navigation for persian language 
+*  add rtl-bootstrap SASS file 
+*  add po file for perisan language (fa_IR.po)
 
 
 ## Contribute
