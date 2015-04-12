@@ -1,0 +1,576 @@
+/*!
+ * Roots 6.5.1
+ */
+
+@import "_bootstrap.scss";
+$font-default: tahoma,arial,sans-serif;
+$font-second: BYekan,tahoma,arial,sans-serif;
+$font-text: DroidNaskh,BYekan,tahoma,arial,sans-serif;
+$mainColor: #27ae60;
+$borderColor: #eee;
+/* ==========================================================================
+    Load Fonts
+    ========================================================================== */
+    @font-face{
+        font-family:'BYekan';
+        src:url(../fonts/fa/BYekan-regular.eot?#) format("eot"),
+        url(../fonts/fa/BYekan-regular.woff) format("woff"),
+        url(../fonts/fa/BYekan-regular.ttf) format("truetype");
+    }
+    @font-face{
+        font-family:'DroidNaskh';
+        src:url(../fonts/fa/DroidNaskh-Regular.eot?#) format("eot"),
+        url(../fonts/fa/DroidNaskh-Regular.woff) format("woff"),
+        url(../fonts/fa/DroidNaskh-Regular.ttf) format("truetype");
+    }
+/* ==========================================================================
+    Base
+    ========================================================================== */
+
+body {
+    font-family: $font-second;
+    font-size: 14px;
+    color: #333;
+}
+
+a {
+    color: darken( $mainColor, 5% );
+
+    &:hover {
+        color: darken( $mainColor, 10% );
+    }
+}
+.form-inline .form-control {
+    width: 100% !important;
+    padding: 0 12px !important;
+}
+
+/* ==========================================================================
+    Header
+    ========================================================================== */
+
+.banner {
+    background: $mainColor;
+    border: none;
+
+    .navbar-brand {
+        color: #fff;
+    }
+
+    .navbar-nav {
+        float: right;
+
+        li > a {
+            color: #fff;
+
+            &:hover, &:focus {
+                color: #fff;
+                background-color: darken($mainColor, 10%);
+            }
+        }
+
+        .active {
+            a, a:hover, a:focus {
+                color: #fff;
+                background-color: darken($mainColor, 10%);
+            }
+        }
+
+        .dropdown-menu {
+            a {
+                background-color: #fff;
+                color: #777;
+            }
+
+            .active {
+                a, a:hover {
+                    color: #fff;
+                    background-color: darken($mainColor, 10%);
+                }
+            }
+        }
+
+        .open {
+            a:hover, a:focus {
+                color: #fff;
+                background-color: darken($mainColor, 10%);
+            }
+        }
+
+        // li {
+        //     > a {
+        //         color: #fff;
+        //         font-size: 15px;
+        //         font-weight: 300;
+
+        //         &:hover {
+        //             background: darken($mainColor, 10%);
+        //             color: #fff;
+        //         }
+        //     }
+
+        //     .dropdown-menu {
+        //         li {
+        //             > a {
+        //                 background-color: #fff;
+        //                 color: #777;
+        //             }
+        //         }
+        //     }
+
+        //     &.active > a {
+        //         background: darken($mainColor, 10%);
+        //         color: #fff;
+        //     }
+
+        //     &.open {
+
+        //         > a, > a:focus {
+        //             background-color: darken($mainColor, 10%);
+        //             color: #fff;
+        //         }
+        //     }
+        // }
+    }
+}
+
+.top-search-form {
+    margin-bottom: 30px;
+    margin-top: -20px;
+    background: #F5F5F5;
+    padding: 15px 0;
+
+    .form-control:focus {
+        @form-control-focus($mainColor);
+    }
+
+    .btn-primary {
+        background: $mainColor;
+        border-color: $mainColor;
+    }
+}
+
+.breadcrumb {
+    background: #fff;
+    color: #6D6D6D;
+    padding-left: 0;
+    margin-bottom: 15px;
+
+    i {
+        font-size: 15px;
+        padding-right: 5px;
+    }
+
+    .sep {
+        font-size: 10px;
+        font-weight: normal;
+        padding: 0 5px;
+    }
+}
+
+.container .jumbotron {
+    text-align: center;
+    background: #f5f5f5;
+    border-radius: 0;
+
+    h1 {
+        font-weight: 300;
+    }
+}
+
+
+/* ==========================================================================
+    Content
+    ========================================================================== */
+
+.content { }
+
+ul.doc-category {
+    margin-bottom: 4em;
+    border: 1px solid $borderColor;
+    border-left: 0;
+    border-right: 0;
+    list-style: none;
+    margin: 0 0 50px 0;
+    padding: 0;
+
+    li.doc, li.category {
+        width: 50%;
+        margin: 0;
+        float: right;
+        padding: 2em 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px dotted $borderColor;
+        min-height: 110px;
+
+        &:nth-child(odd) {
+            padding-left: 2em;
+            border-left: 1px dotted $borderColor;
+            clear: both;
+        }
+
+        &:nth-child(even) {
+            padding-right: 2em;
+        }
+
+        h3 {
+            margin: 0;
+            position: relative;
+
+            a {
+                font-size: 16px;
+                display: block;
+                padding-right: 30px;
+            }
+
+            &:before {
+                color: rgba(37, 90, 140, 0.2);
+                font-family: 'FontAwesome';
+                display: inline-block;
+                font-size: 20px;
+                font-weight: normal;
+                line-height: 100%;
+                width: 1.758em;
+                position: absolute;
+                top: 0;
+                right: 0;
+                content: "\f0b1";
+            }
+        }
+
+        .inside {
+            padding-left: 30px;
+            padding-top: 10px;
+        }
+
+    }
+
+    li.doc {
+        h3:before {
+            content: "\f02d";
+        }
+    }
+}
+
+
+
+/* ==========================================================================
+    Primary Content
+    ========================================================================== */
+
+.main {
+
+    h2.category-title {
+        margin: 15px 0 20px 0;
+        font-weight: 300;
+    }
+
+}
+
+/* Gallery Shortcode */
+.gallery-row { padding: 15px 0; }
+
+
+
+/* ==========================================================================
+    Sidebar
+    ========================================================================== */
+
+.sidebar {
+    h3 {
+        margin: 0 0 15px 0;
+        padding: 0 0 15px 0;
+        font-weight: 300;
+        border-bottom: 1px solid $borderColor;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .widget {
+        margin-bottom: 25px;
+    }
+}
+
+
+
+/* ==========================================================================
+    Posts
+    ========================================================================== */
+
+.hentry {
+    position: relative;
+}
+
+.hentry header, .page-header {
+    border: none;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+        margin: 0 0 15px 0;
+        padding: 0 0 15px 0;
+        font-weight: 300;
+        border-bottom: 1px solid $borderColor;
+    }
+}
+.hentry time { }
+.hentry .byline { }
+.hentry .entry-content {
+
+    img {
+        max-width: 100%;
+        border: 1px solid $borderColor;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .page-header {
+        padding-bottom: 9px;
+        margin: 40px 0 20px;
+        border-bottom: 1px solid #eee;
+    }
+}
+.hentry footer { }
+
+.wedoc-feedback-wrap {
+    padding-top: 15px;
+
+    a {
+        font-weight: bold;
+        padding: 0 5px;
+        border-radius: 3px;
+    }
+
+    a.positive {
+        color: #6a9c1f;
+        border: 1px solid #6a9c1f;
+    }
+
+    a.negative {
+        color: #ac2d22;
+        border: 1px solid #ac2d22;
+
+    }
+}
+
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar {
+    position: static;
+    background: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    position: fixed;
+    width: 250px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            border-bottom: 1px solid #ECECEC;
+        }
+    }
+
+    a {
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        color: #999;
+        padding: 8px 20px;
+
+        &:hover, &:focus {
+            padding-right: 19px;
+            color: $mainColor;
+            text-decoration: none;
+            background-color: transparent;
+            border-right: 1px solid $mainColor;
+        }
+    }
+
+    .active {
+        a, a:hover, a:focus {
+            padding-left: 18px;
+            font-weight: bold;
+            color: $mainColor;
+            background-color: transparent;
+            border-left: 2px solid $mainColor;
+        }
+    }
+}
+
+
+
+/* ==========================================================================
+    Footer
+    ========================================================================== */
+
+.content-info {
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid $borderColor;
+    background: #333;
+    color: #999;
+
+    .widget-area {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+
+    .widget {
+        padding-bottom: 15px;
+
+        h3 {
+            border-bottom: 1px solid #2E2E2E;
+            margin: 0 0 10px 0;
+            padding: 0 0 10px 0;
+            font-weight: 300;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            ul.children {
+                padding-left: 10px;
+            }
+
+            li {
+                padding: 3px 0;
+            }
+        }
+
+        a {
+            color: #777;
+        }
+    }
+
+    .copyright {
+        padding-top: 15px;
+        border-top: 1px solid #2E2E2E;
+        text-align:center;
+        direction: ltr;
+    }
+}
+
+
+
+/* ==========================================================================
+    WordPress Generated Classes
+    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+    ========================================================================== */
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+
+
+/* ==========================================================================
+    Media Queries
+    ========================================================================== */
+
+@media (min-width: $screen-sm-min) {}
+
+@media (min-width: $screen-md-min) { }
+
+@media (min-width: $screen-lg-min) { }
+
+@media (max-width: 767px) {
+    .banner .navbar-nav {
+        float: none;
+    }
+}

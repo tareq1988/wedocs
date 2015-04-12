@@ -190,7 +190,7 @@ function wedocs_excerpt_length($length) {
 }
 
 function wedocs_excerpt_more($more) {
-    return ' &hellip; <a href="' . get_permalink() . '">' . __('Read more &rarr;', 'wedevs-docs') . '</a>';
+    return ' &hellip; <a href="' . get_permalink() . '">' . __('Read more &rarr;', 'wedocs') . '</a>';
 }
 add_filter('excerpt_length', 'wedocs_excerpt_length');
 add_filter('excerpt_more', 'wedocs_excerpt_more');

@@ -15,10 +15,10 @@
                 <div class="bs-sidebar hidden-print affix">
                     <ul class="nav bs-sidenav">
                         <?php
-                        foreach ($without_tags as $link_text) {
-                            $slug = sanitize_title_with_dashes( $link_text );
+                        foreach ($without_tags as $i=>$link_text) {
+                            $slug = 'h'.$i;//sanitize_title_with_dashes( $link_text );
 
-                            printf('<li><a href="#%s"><i class="fa fa-chevron-right pull-right"></i> %s</a></li>', $slug, strip_tags( $link_text ) );
+                            printf('<li><a href="#%s"><i class="fa fa-chevron-left pull-left"></i> %s</a></li>', $slug, strip_tags( $link_text ) );
                         }
                         ?>
                     </ul>
@@ -32,8 +32,8 @@
                         <h1 class="entry-title"><?php the_title(); ?></h1>
                     </header>
                     <?php
-                    foreach ($without_tags as $link_text) {
-                        $slug = sanitize_title_with_dashes( $link_text );
+                    foreach ($without_tags as $i=>$link_text) {
+                        $slug = 'h'.$i;sanitize_title_with_dashes( $link_text );
                         $replace = sprintf('<div class="spy-item" id="%s"></div>', $slug );
                         $replace = $replace . '<div class="page-header"><h3 class="section-title">' . $link_text . '</h3></div>';
 
