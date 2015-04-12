@@ -1,4 +1,4 @@
-# rtl version weDocs
+# weDocs-RTL version
 
 A clean documentation theme for WordPress
 
@@ -23,8 +23,8 @@ demo en: [docs.wedevs.com](http://docs.wedevs.com)
 
 *  add sass rtl-bootstrap 
 *  add language fa.po
-*  change php files themeplate
-*  fix problem anchor link for persian language 
+*  change php files themplate
+*  fix problem place navigation for persian language 
 
 
 ## Contribute
@@ -33,3 +33,6 @@ If you want to contribute on this project, you are more than welcome.
 
 ## Author
 [Tareq Hasan](http://tareq.wedevs.com)
+
+## Translate 
+[Meysam Jafari](http://jafarii.ir)
