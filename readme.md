@@ -1,8 +1,8 @@
-# weDocs
+# rtl version weDocs
 
 A clean documentation theme for WordPress
 
-demo: [docs.wedevs.com](http://docs.wedevs.com)
+demo en: [docs.wedevs.com](http://docs.wedevs.com)
 
 ![screenshot](screenshot.png)
 
@@ -18,7 +18,11 @@ demo: [docs.wedevs.com](http://docs.wedevs.com)
 * [Font Awesome](http://fontawesome.io/)
 * [Roots](http://roots.io)
 * [Less](http://www.lesscss.org/)
-
+### Change RTL
+*  add sass rtl-bootstrap 
+*  add language fa.po
+*  change php files themeplate
+*  fix problem anchor link for persian language 
 
 
 ## Contribute
