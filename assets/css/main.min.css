@@ -1384,7 +1384,7 @@ ul.doc-category li.doc h3:before{content:"\f02d"}
 .bs-sidebar,.bs-sidebar ul{margin:0;padding:0}
 .wedoc-feedback-wrap a.positive{color:#6a9c1f;border:1px solid #6a9c1f}
 .wedoc-feedback-wrap a.negative{color:#ac2d22;border:1px solid #ac2d22}
-.bs-sidebar{background:#F5F5F5;z-index:99;position:fixed;width:250px}
+.bs-sidebar{background:#F5F5F5;z-index:99;position:fixed}
 .bs-sidebar ul li{border-bottom:1px solid #ECECEC}
 .bs-sidebar a{display:block;font-size:13px;font-weight:500;color:#999;padding:8px 20px}
 .bs-sidebar a:focus,.bs-sidebar a:hover{padding-left:19px;color:#27ae60;text-decoration:none;background-color:transparent;border-left:1px solid #27ae60}
@@ -1412,7 +1412,9 @@ a img.aligncenter{display:block;margin-left:auto;margin-right:auto}
 .wp-caption.alignright{margin:5px 0 20px 20px}
 .wp-caption img{border:0;height:auto;margin:0;max-width:98.5%;padding:0;width:auto}
 .wp-caption p.wp-caption-text{font-size:11px;line-height:17px;margin:0;padding:0 4px 5px}
+@media (min-width:1200px){.bs-sidebar{width:250px}
+}
 @media (max-width:767px){.banner .navbar-nav{float:none}
 }
-@media (max-width:1200px){.bs-sidebar{width:220px!important}
+@media (max-width:1200px){.bs-sidebar{width:220px}
 }
