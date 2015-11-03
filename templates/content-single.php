@@ -11,7 +11,7 @@
 
             if ( $with_tags ) {
             ?>
-            <div class="col-md-3 hidden-xs">
+            <div class="col-md-3 hidden-sm">
                 <div class="bs-sidebar hidden-print affix">
                     <ul class="nav bs-sidenav">
                         <?php
