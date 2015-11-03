@@ -19,16 +19,16 @@
 
     <div class="wrap container" role="document">
         <div class="content row">
-            <main class="main <?php echo wedocs_main_class(); ?>" role="main">
-                <?php include roots_template_path(); ?>
-            </main><!-- /.main -->
+
 
             <?php if ( wedocs_display_sidebar() ) : ?>
                 <aside class="sidebar <?php echo wedocs_sidebar_class(); ?>" role="complementary">
                     <?php include roots_sidebar_path(); ?>
                 </aside><!-- /.sidebar -->
             <?php endif; ?>
-
+            <main class="main <?php echo wedocs_main_class(); ?>" role="main">
+                <?php include roots_template_path(); ?>
+            </main><!-- /.main -->
         </div><!-- /.content -->
     </div><!-- /.wrap -->
 

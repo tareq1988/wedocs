@@ -1,8 +1,8 @@
-# weDocs
+# weDocs-RTL version
 
 A clean documentation theme for WordPress
 
-demo: [docs.wedevs.com](http://docs.wedevs.com)
+demo en: [docs.wedevs.com](http://docs.wedevs.com)
 
 ![screenshot](screenshot.png)
 
@@ -19,6 +19,10 @@ demo: [docs.wedevs.com](http://docs.wedevs.com)
 * [Roots](http://roots.io)
 * [Less](http://www.lesscss.org/)
 
+### Change RTL
+
+*  add rtl-bootstrap SASS file 
+*  add po file for perisan language (fa_IR.po)
 
 
 ## Contribute
@@ -27,3 +31,6 @@ If you want to contribute on this project, you are more than welcome.
 
 ## Author
 [Tareq Hasan](http://tareq.wedevs.com)
+
+## Translate 
+[Meysam Jafari](http://jafarii.ir)

@@ -7,7 +7,7 @@
 function wedocs_breadcrumbs() {
 
     $showOnHome = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
-    $delimiter = '<i class="fa fa-chevron-right sep"></i>'; // delimiter between crumbs
+    $delimiter = '<i class="fa fa-chevron-left sep"></i>'; // delimiter between crumbs
     $home = __( 'Home', 'wedocs' ); // text for the 'Home' link
     $showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
     $before = '<span class="current">'; // tag before the current crumb
@@ -116,9 +116,9 @@ function wedocs_breadcrumbs() {
 function wedocs_display_credits() {
     $text = '<a href="http://wordpress.org/" rel="generator">' . sprintf( __( 'Proudly powered by %s', 'wedocs' ), 'WordPress' ) . '</a>';
     $text .= '<span class="sep"> | </span>';
-    $text .= sprintf( __( 'Theme: %1$s by %2$s', 'wedocs' ), '<a href="http://wedevs.com/theme/wedocs">weDocs</a>', '<a href="http://tareq.wedevs.com/" rel="designer">Tareq Hasan</a>' );
+    $text .= sprintf( __( 'Theme: %1$s by %2$s', 'wedocs' ), '<a href="http://wedevs.com/theme/wedocs">weDocs</a>', '<a href="http://tareq.wedevs.com/" rel="designer">Tareq Hasan</a> | Translated By: <a href="http://jafarii.ir" rel="designer">Jafari</a>' );
 
-    echo '<div class="pull-right">' . apply_filters( 'wedocs_credits_text', $text ) . '</div>';
+    echo '<div class="text-center">' . apply_filters( 'wedocs_credits_text', $text ) . '</div>';
 }
 
 add_action( 'wedocs_credits', 'wedocs_display_credits' );

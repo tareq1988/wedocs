@@ -19,7 +19,7 @@ define( 'POST_EXCERPT_LENGTH', 20); // Length in words for excerpt_length filter
 function wedocs_main_class() {
     if ( wedocs_display_sidebar() ) {
         // Classes on pages with the sidebar
-        $class = 'col-sm-8';
+        $class = 'col-sm-9';
     } else {
         // Classes on full width pages
         $class = 'col-sm-12';
@@ -32,7 +32,7 @@ function wedocs_main_class() {
  * .sidebar classes
  */
 function wedocs_sidebar_class() {
-    return 'col-sm-4';
+    return 'col-sm-3';
 }
 
 /**

@@ -27,7 +27,7 @@ $doc_query = new WP_Query( $args );
 // The Loop
 if ( $doc_query->have_posts() ) {
 
-    printf( '<h2 class="category-title">%s</h2>', __( 'Documents', 'wedevs-docs' ) );
+    printf( '<h2 class="category-title">%s</h2>', __( 'Documents', 'wedocs' ) );
 
     echo '<ul class="doc-category">';
     while ($doc_query->have_posts()) {
@@ -46,6 +46,6 @@ wp_reset_postdata();
 
 <?php if ( !$categories && !$doc_query->have_posts() ) { ?>
     <div class="alert alert-warning">
-        <?php _e( 'Nothing found!', 'wedevs-docs' ); ?>
+        <?php _e( 'Nothing found!', 'wedocs' ); ?>
     </div>
 <?php } ?>
