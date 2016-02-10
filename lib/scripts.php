@@ -12,8 +12,9 @@
  */
 function wedocs_scripts() {
     wp_enqueue_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' );
-    wp_enqueue_style( 'wedocs-main', get_template_directory_uri() . '/assets/css/main.min.css', false );
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', false );
     wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css', false );
+    wp_enqueue_style( 'wedocs-main', get_template_directory_uri() . '/style.css', false );
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script( 'comment-reply' );

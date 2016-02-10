@@ -231,9 +231,10 @@ function wedocs_nice_search_redirect() {
         exit();
     }
 }
-if (current_theme_supports('nice-search')) {
-    add_action('template_redirect', 'wedocs_nice_search_redirect');
-}
+
+// if (current_theme_supports('nice-search')) {
+//     add_action('template_redirect', 'wedocs_nice_search_redirect');
+// }
 
 /**
  * Fix for empty search queries redirecting to home page

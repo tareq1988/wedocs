@@ -1,0 +1,304 @@
+# Copyright (C) 2015 Tareq hasan
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: weDocs 0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/tareq1988/wedocs/issues\n"
+"POT-Creation-Date: 2015-02-07 20:16:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"X-Generator: grunt-wp-i18n 0.5.0\n"
+
+#: 404.php:4
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr ""
+
+#: 404.php:7
+msgid "It looks like this was the result of either:"
+msgstr ""
+
+#: 404.php:9
+msgid "a mistyped address"
+msgstr ""
+
+#: 404.php:10
+msgid "an out-of-date link"
+msgstr ""
+
+#: archive.php:30 search.php:5
+msgid "Documents"
+msgstr ""
+
+#: archive.php:49 search.php:17
+msgid "Nothing found!"
+msgstr ""
+
+#: base.php:6
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a "
+"href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your "
+"experience."
+msgstr ""
+
+#: functions.php:30
+msgid "Sorry, you've already recorded your feedback!"
+msgstr ""
+
+#: functions.php:45
+msgid "Thanks for your feedback!"
+msgstr ""
+
+#: lib/cleanup.php:193
+msgid "Read more &rarr;"
+msgstr ""
+
+#: lib/custom.php:11
+msgid "Home"
+msgstr ""
+
+#: lib/custom.php:33
+msgid "Search results for"
+msgstr ""
+
+#: lib/custom.php:91
+msgid "Posts tagged"
+msgstr ""
+
+#: lib/custom.php:96
+msgid "Articles posted by"
+msgstr ""
+
+#: lib/custom.php:99
+msgid "Error 404"
+msgstr ""
+
+#: lib/custom.php:104
+msgid "Page"
+msgstr ""
+
+#: lib/custom.php:117
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: lib/custom.php:119
+msgid "Theme: %1$s by %2$s"
+msgstr ""
+
+#: lib/customizer.php:18
+msgid "Theme Logo"
+msgstr ""
+
+#: lib/customizer.php:20
+msgid "Upload your logo to replace the default Logo (dimension : 220 X 45)"
+msgstr ""
+
+#: lib/customizer.php:26
+msgid "Upload Logo"
+msgstr ""
+
+#: lib/customizer.php:33
+msgid "weDocs Options"
+msgstr ""
+
+#: lib/customizer.php:43
+msgid "Homepage Text - header"
+msgstr ""
+
+#: lib/customizer.php:55
+msgid "Homepage Text - tagline"
+msgstr ""
+
+#: lib/customizer.php:63
+msgid "&copy; %d. All rights are reserved."
+msgstr ""
+
+#: lib/customizer.php:67
+msgid "Footer Text"
+msgstr ""
+
+#: lib/init.php:11
+msgid "Primary Navigation"
+msgstr ""
+
+#: lib/titles.php:11
+msgid "Latest Posts"
+msgstr ""
+
+#: lib/titles.php:22
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: lib/titles.php:24
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: lib/titles.php:26
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: lib/titles.php:29
+msgid "Author Archives: %s"
+msgstr ""
+
+#: lib/titles.php:34
+msgid "Search Results for %s"
+msgstr ""
+
+#: lib/titles.php:36
+msgid "Not Found"
+msgstr ""
+
+#: lib/widgets.php:8
+msgid "Primary"
+msgstr ""
+
+#: lib/widgets.php:17
+msgid "Footer 1"
+msgstr ""
+
+#: search.php:26
+msgid "&larr; Older posts"
+msgstr ""
+
+#: search.php:27
+msgid "Newer posts &rarr;"
+msgstr ""
+
+#: templates/comment.php:4
+msgid "%1$s"
+msgstr ""
+
+#: templates/comment.php:5
+msgid "(Edit)"
+msgstr ""
+
+#: templates/comment.php:9
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: templates/comments.php:8
+msgid "One Response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/comments.php:18
+msgid "&larr; Older comments"
+msgstr ""
+
+#: templates/comments.php:21
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#: templates/comments.php:29 templates/comments.php:38
+msgid "Comments are closed."
+msgstr ""
+
+#: templates/comments.php:45
+msgid "Leave a Reply"
+msgstr ""
+
+#: templates/comments.php:45
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: templates/comments.php:48
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: templates/comments.php:53
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr ""
+
+#: templates/comments.php:54
+msgid "Log out of this account"
+msgstr ""
+
+#: templates/comments.php:54
+msgid "Log out &raquo;"
+msgstr ""
+
+#: templates/comments.php:58
+msgid "Name"
+msgstr ""
+
+#: templates/comments.php:58 templates/comments.php:62
+msgid " (required)"
+msgstr ""
+
+#: templates/comments.php:62
+msgid "Email (will not be published)"
+msgstr ""
+
+#: templates/comments.php:66
+msgid "Website"
+msgstr ""
+
+#: templates/comments.php:71
+msgid "Comment"
+msgstr ""
+
+#: templates/comments.php:74
+msgid "Submit Comment"
+msgstr ""
+
+#: templates/content-feedback.php:8
+msgid "%d person found this useful"
+msgid_plural "%d persons found this useful"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/content-feedback.php:8 templates/content-feedback.php:9
+msgid "No votes yet"
+msgstr ""
+
+#: templates/content-feedback.php:9
+msgid "%d person found this not useful"
+msgid_plural "%d persons found this not useful"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/entry-meta.php:2
+msgid "By"
+msgstr ""
+
+#: templates/header-top-navbar.php:5
+msgid "Toggle navigation"
+msgstr ""
+
+#: templates/header-top-navbar.php:29 templates/header-top-navbar.php:35
+#: templates/searchform.php:3 templates/searchform.php:6
+msgid "Search"
+msgstr ""
+
+#: templates/header-top-navbar.php:30 templates/searchform.php:4
+msgid "Search for:"
+msgstr ""
+
+#: templates/header-top-navbar.php:34
+msgid "All Documents"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "weDocs"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wedevs.com/theme/wedocs/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A documentation theme for WordPress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Tareq hasan"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://tareq.wedevs.com/"
+msgstr ""
