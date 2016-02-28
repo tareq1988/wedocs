@@ -9,7 +9,519 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: green
 */
-
-.sticky{}
-.gallery-caption{}
-.bypostauthor{}
+/* ==========================================================================
+    Base
+    ========================================================================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+a {
+  color: #258cd1;
+}
+a:hover {
+  color: #217dbc;
+}
+/* ==========================================================================
+    Header
+    ========================================================================== */
+.banner {
+  background-color: #3598db;
+  border: none;
+  margin-bottom: 0;
+}
+.banner .navbar-header .navbar-brand {
+  color: #fff;
+  background-size: contain !important;
+  margin-top: 5px;
+  max-height: 38px;
+}
+.banner .navbar-nav {
+  float: right;
+}
+.banner .navbar-nav li > a {
+  color: #fff;
+}
+.banner .navbar-nav li > a:hover,
+.banner .navbar-nav li > a:focus {
+  color: #fff;
+  background-color: #217dbc;
+}
+.banner .navbar-nav .active a,
+.banner .navbar-nav .active a:hover,
+.banner .navbar-nav .active a:focus {
+  color: #fff;
+  background-color: #217dbc;
+}
+.banner .navbar-nav .dropdown-menu a {
+  background-color: #fff;
+  color: #777;
+}
+.banner .navbar-nav .dropdown-menu .active a,
+.banner .navbar-nav .dropdown-menu .active a:hover {
+  color: #fff;
+  background-color: #217dbc;
+}
+.banner .navbar-nav .open a:hover,
+.banner .navbar-nav .open a:focus {
+  color: #fff;
+  background-color: #217dbc;
+}
+.top-search-form {
+  margin-bottom: 35px;
+  padding: 60px 0;
+  background: #526006 url('assets/img/search-header.jpg') center 10% no-repeat;
+  position: relative;
+}
+.top-search-form input.search-field {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjFweCIgdmlld0JveD0iMCAwIDIwIDIxIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy4wLjMgKDc4OTEpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkltcG9ydGVkIExheWVyczwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHNrZXRjaDp0eXBlPSJNU1BhZ2UiPgogICAgICAgIDxnIGlkPSJBcnRib2FyZC0xIiBza2V0Y2g6dHlwZT0iTVNBcnRib2FyZEdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQyLjAwMDAwMCwgLTE2NC4wMDAwMDApIiBmaWxsPSIjREREREREIj4KICAgICAgICAgICAgPGcgaWQ9IkhlYWRlciIgc2tldGNoOnR5cGU9Ik1TTGF5ZXJHcm91cCI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iU2VhcmNoLUlucHV0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMjIuMDAwMDAwLCAxNDkuMDAwMDAwKSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+CiAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTM5LjU2MTk0NDQsMzMuMzgxMDQxMSBMMzMuNjI0NzIyMiwyNy4yMzIwNjg1IEMzNC40ODU1NTU2LDI1Ljk2ODYxNjQgMzQuOTkzMDU1NiwyNC40Mjc4NDkzIDM0Ljk5MzA1NTYsMjIuNzYzMzgzNiBDMzQuOTkzMDU1NiwxOC40NzU2NDM4IDMxLjYzNjk0NDQsMTUgMjcuNDk2NjY2NywxNSBDMjMuMzU2NjY2NywxNSAyMCwxOC40NzU2NDM4IDIwLDIyLjc2MzM4MzYgQzIwLDI3LjA1MDgzNTYgMjMuMzU2NjY2NywzMC41MjcwNTQ4IDI3LjQ5NjY2NjcsMzAuNTI3MDU0OCBDMjkuMTExNjY2NywzMC41MjcwNTQ4IDMwLjYwNjExMTEsMjkuOTk2NTg5IDMxLjgyOTcyMjIsMjkuMDk3MDQxMSBMMzcuNzYzODg4OSwzNS4yNDMxMzcgQzM4LjMwODMzMzMsMzUuODA2Njg0OSAzOS4xNTgzMzMzLDM1Ljg0OTI2MDMgMzkuNjUyNzc3OCwzNS4zMzY5MTc4IEM0MC4xNDcyMjIyLDM0LjgyNTE1MDcgNDAuMTA2Mzg4OSwzMy45NDQ4NzY3IDM5LjU2MTk0NDQsMzMuMzgxMDQxMSBMMzkuNTYxOTQ0NCwzMy4zODEwNDExIFogTTIyLjUsMjIuNzYzMzgzNiBDMjIuNSwxOS45MTA1NDc5IDI0Ljc0MTY2NjcsMTcuNTg5MDQxMSAyNy40OTY2NjY3LDE3LjU4OTA0MTEgQzMwLjI1MTY2NjcsMTcuNTg5MDQxMSAzMi40OTMwNTU2LDE5LjkxMDU0NzkgMzIuNDkzMDU1NiwyMi43NjMzODM2IEMzMi40OTMwNTU2LDI1LjYxNjc5NDUgMzAuMjUxNjY2NywyNy45MzgwMTM3IDI3LjQ5NjY2NjcsMjcuOTM4MDEzNyBDMjQuNzQxNjY2NywyNy45MzgwMTM3IDIyLjUsMjUuNjE2Nzk0NSAyMi41LDIyLjc2MzM4MzYgTDIyLjUsMjIuNzYzMzgzNiBaIiBpZD0iSW1wb3J0ZWQtTGF5ZXJzIj48L3BhdGg+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position: 14px 13px;
+  padding-left: 50px;
+}
+.top-search-form .form-control:focus:focus {
+  border-color: #3598db;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(53, 152, 219, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(53, 152, 219, 0.6);
+}
+.top-search-form .btn-primary {
+  background: #3598db;
+  border-color: #3598db;
+}
+.breadcrumb {
+  background: #fff;
+  color: #6D6D6D;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+.breadcrumb i {
+  font-size: 15px;
+  padding-right: 5px;
+}
+.breadcrumb .sep {
+  font-size: 10px;
+  font-weight: normal;
+  padding: 0 5px;
+}
+.container .jumbotron {
+  text-align: center;
+  background: #f5f5f5;
+  border-radius: 0;
+}
+.container .jumbotron h1 {
+  font-weight: 300;
+}
+/* ==========================================================================
+    Content
+    ========================================================================== */
+ul.doc-category {
+  margin-bottom: 4em;
+  border: 1px solid #eeeeee;
+  border-left: 0;
+  border-right: 0;
+  list-style: none;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+ul.doc-category li.doc,
+ul.doc-category li.category {
+  width: 50%;
+  margin: 0;
+  float: left;
+  padding: 2em 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px dotted #eeeeee;
+  min-height: 110px;
+}
+ul.doc-category li.doc:nth-child(odd),
+ul.doc-category li.category:nth-child(odd) {
+  padding-right: 2em;
+  border-right: 1px dotted #eeeeee;
+  clear: both;
+}
+ul.doc-category li.doc:nth-child(even),
+ul.doc-category li.category:nth-child(even) {
+  padding-left: 2em;
+}
+ul.doc-category li.doc h3,
+ul.doc-category li.category h3 {
+  margin: 0;
+  position: relative;
+}
+ul.doc-category li.doc h3 a,
+ul.doc-category li.category h3 a {
+  font-size: 16px;
+  display: block;
+  padding-left: 30px;
+}
+ul.doc-category li.doc h3:before,
+ul.doc-category li.category h3:before {
+  color: rgba(37, 90, 140, 0.2);
+  font-family: 'FontAwesome';
+  display: inline-block;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 100%;
+  width: 1.758em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\f0b1";
+}
+ul.doc-category li.doc .inside,
+ul.doc-category li.category .inside {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+ul.doc-category li.doc .inside ul.child-cats,
+ul.doc-category li.category .inside ul.child-cats {
+  padding: 15px 0 0 20px;
+  clear: both;
+  display: block;
+}
+ul.doc-category li.doc .inside ul.child-cats > li,
+ul.doc-category li.category .inside ul.child-cats > li {
+  padding-bottom: 15px;
+  float: left;
+  width: 48%;
+  padding-right: 2%;
+  list-style: none;
+}
+ul.doc-category li.doc .inside ul.child-cats > li:nth-child(2n+1),
+ul.doc-category li.category .inside ul.child-cats > li:nth-child(2n+1) {
+  clear: both;
+}
+ul.doc-category li.doc .inside ul.child-cats > li > a,
+ul.doc-category li.category .inside ul.child-cats > li > a {
+  font-weight: bold;
+}
+ul.doc-category li.doc .inside ul.child-cats > li ul.children,
+ul.doc-category li.category .inside ul.child-cats > li ul.children {
+  padding: 5px 0 0 15px;
+}
+ul.doc-category li.doc h3:before {
+  content: "\f02d";
+}
+/* ==========================================================================
+    Primary Content
+    ========================================================================== */
+.main h2.category-title {
+  margin: 15px 0 20px 0;
+  font-weight: 300;
+}
+/* Gallery Shortcode */
+.gallery-row {
+  padding: 15px 0;
+}
+/* ==========================================================================
+    Sidebar
+    ========================================================================== */
+.sidebar h3 {
+  margin: 0 0 15px 0;
+  padding: 0 0 15px 0;
+  font-weight: 300;
+  border-bottom: 1px solid #eeeeee;
+}
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+aside.doc-nav-widget h3 {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  margin: 0 0 15px 0;
+  padding: 0 0 15px 0;
+}
+aside.doc-nav-widget ul.doc-nav-list li a {
+  display: block;
+  padding: 8px 20px;
+}
+aside.doc-nav-widget ul.doc-nav-list li ul.children {
+  list-style: none;
+  margin: 15px 0 15px 26px;
+  padding: 0;
+  border: none;
+  border-left: 1px solid #ddd;
+  display: none;
+}
+aside.doc-nav-widget ul.doc-nav-list li ul.children a {
+  color: #333333;
+  font-weight: normal;
+}
+aside.doc-nav-widget ul.doc-nav-list > li.current_page_parent > a,
+aside.doc-nav-widget ul.doc-nav-list > li.current_page_item > a,
+aside.doc-nav-widget ul.doc-nav-list > li.current_page_ancestor > a {
+  background: #3598db;
+  color: #fff;
+}
+aside.doc-nav-widget ul.doc-nav-list > li.current_page_parent li.current_page_item > a,
+aside.doc-nav-widget ul.doc-nav-list > li.current_page_item li.current_page_item > a,
+aside.doc-nav-widget ul.doc-nav-list > li.current_page_ancestor li.current_page_item > a {
+  border-left: 2px solid #3598db;
+  color: #191919;
+  font-weight: bold;
+}
+aside.doc-nav-widget ul.doc-nav-list > li.current_page_parent ul.children,
+aside.doc-nav-widget ul.doc-nav-list > li.current_page_item ul.children,
+aside.doc-nav-widget ul.doc-nav-list > li.current_page_ancestor ul.children {
+  display: block;
+}
+/* ==========================================================================
+    Posts
+    ========================================================================== */
+.hentry {
+  position: relative;
+  min-height: 300px;
+}
+.hentry header,
+.page-header {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.hentry header h1,
+.page-header h1 {
+  margin: 0 0 25px 0;
+  padding: 0 0 25px 0;
+  font-weight: bold;
+  border-bottom: 1px solid #eeeeee;
+}
+.hentry .entry-content img {
+  max-width: 100%;
+  border: 1px solid #eeeeee;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 25px;
+  height: auto;
+  background: #F9F9F9;
+  display: block;
+}
+.hentry .entry-content .page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+.hentry .entry-content h2 {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+.hentry .entry-content h2:first-of-type {
+  margin-top: 20px;
+}
+.hentry .entry-content ol li,
+.hentry .entry-content ul li {
+  padding: 10px 0;
+}
+.hentry .article-child {
+  margin-top: 25px;
+}
+.hentry .article-child h3 {
+  margin: 0 0 15px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.wedoc-feedback-wrap {
+  padding-top: 15px;
+  text-align: center;
+  margin-top: 40px;
+}
+.wedoc-feedback-wrap span {
+  margin-right: 15px;
+}
+.wedoc-feedback-wrap a {
+  font-weight: bold;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+.wedoc-feedback-wrap a.positive {
+  color: #6a9c1f;
+  border: 1px solid #6a9c1f;
+}
+.wedoc-feedback-wrap a.negative {
+  color: #ac2d22;
+  border: 1px solid #ac2d22;
+}
+.single-docs .doc-single-content {
+  border-left: 1px solid #ddd;
+  padding-left: 25px;
+}
+.single-docs .doc-single-content.skip-sidebar {
+  padding-left: 15px;
+  border-left: 0;
+}
+/*
+ * Side navigation
+ *
+ * Scrollspy and affixed enhanced navigation to highlight sections and secondary
+ * sections of docs content.
+ */
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar {
+  position: static;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  position: fixed;
+  min-width: 150px;
+}
+.bs-sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+.bs-sidebar ul li {
+  border-bottom: 1px solid #ECECEC;
+}
+.bs-sidebar a {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: #999;
+  padding: 8px 20px;
+}
+.bs-sidebar a:hover,
+.bs-sidebar a:focus {
+  color: #3598db;
+  text-decoration: none;
+  background-color: transparent;
+  border-left: 1px solid #3598db;
+}
+.bs-sidebar a .fa {
+  display: none;
+}
+.bs-sidebar .active a,
+.bs-sidebar .active a:hover,
+.bs-sidebar .active a:focus {
+  font-weight: bold;
+  color: #3598db;
+  background-color: transparent;
+  border-left: 2px solid #3598db;
+}
+/* ==========================================================================
+    Footer
+    ========================================================================== */
+.content-info {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid #eeeeee;
+  background: #333;
+  color: #999;
+}
+.content-info .widget-area {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+.content-info .widget {
+  padding-bottom: 15px;
+}
+.content-info .widget h3 {
+  border-bottom: 1px solid #2E2E2E;
+  margin: 0 0 10px 0;
+  padding: 0 0 10px 0;
+  font-weight: 300;
+}
+.content-info .widget ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.content-info .widget ul ul.children {
+  padding-left: 10px;
+}
+.content-info .widget ul li {
+  padding: 3px 0;
+}
+.content-info .widget a {
+  color: #777;
+}
+.content-info .copyright {
+  padding-top: 15px;
+  border-top: 1px solid #2E2E2E;
+}
+/* ==========================================================================
+    WordPress Generated Classes
+    See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+    ========================================================================== */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption {
+  background: #fff;
+  border: none;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 0;
+  text-align: center;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+.wp-caption .wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+  background-color: #eee;
+}
+/* ==========================================================================
+    Media Queries
+    ========================================================================== */
+@media (max-width: 767px) {
+  .banner .navbar-nav {
+    float: none;
+  }
+}

@@ -46,5 +46,5 @@ if ( wedocs_enable_root_relative_urls() ) {
         'style_loader_src'
     );
 
-    add_filters($wedevs_rel_filters, 'wedocs_root_relative_url');
+    // add_filters($wedevs_rel_filters, 'wedocs_root_relative_url');
 }

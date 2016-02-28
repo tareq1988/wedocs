@@ -44,6 +44,23 @@ function wedocs_breadcrumbs() {
         } elseif ( is_year() ) {
             echo $before . get_the_time('Y') . $after;
 
+
+        } elseif ( $post->post_type == 'docs' && $post->post_parent ) {
+            $parent_id  = $post->post_parent;
+            $breadcrumbs = array();
+            while ($parent_id) {
+                $page = get_post($parent_id);
+                $breadcrumbs[] = '<a href="' . get_permalink($page->ID) . '">' . get_the_title($page->ID) . '</a>';
+                $parent_id  = $page->post_parent;
+            }
+            $breadcrumbs = array_reverse($breadcrumbs);
+            for ($i = 0; $i < count($breadcrumbs); $i++) {
+                echo $breadcrumbs[$i];
+                if ($i != count($breadcrumbs)-1) echo ' ' . $delimiter . ' ';
+            }
+
+            if ($showCurrent == 1) echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
+
         } elseif ( is_single() && !is_attachment() ) {
             if ( get_post_type() != 'post' ) {
                 $post_type = get_post_type_object(get_post_type());

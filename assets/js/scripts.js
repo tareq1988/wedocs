@@ -28,4 +28,12 @@ jQuery(function($) {
             pending_ajax = false;
         });
     });
+
+    $('#top-search-form .dropdown-menu').on('click', 'a', function(e) {
+        e.preventDefault();
+        var param = $(this).attr("href").replace("#","");
+        var concept = $(this).text();
+        $('#top-search-form span#search_concept').text(concept);
+        $('.input-group #search_param').val(param);
+    });
 });
