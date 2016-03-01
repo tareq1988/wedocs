@@ -1,5 +1,7 @@
 <?php
 
+if ( ! class_exists( 'WeDocs_Walker_Docs' ) ) :
+
 /**
  * weDocs Docs Walker
  */
@@ -38,3 +40,5 @@ class WeDocs_Walker_Docs extends Walker_Page {
         parent::start_el( $output, $page, $depth, $args, $current_page);
     }
 }
+
+endif;

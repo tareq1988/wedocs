@@ -3,7 +3,7 @@ global $post;
 
 $skip_sidebar = get_post_meta( $post->ID, 'skip_sidebar', true );
 ?>
-<div class="row">
+<div class="row wedocs-single-wrap">
 
     <?php if ( $skip_sidebar != 'yes' ) { ?>
         <div class="col-sm-3">
@@ -48,7 +48,7 @@ $skip_sidebar = get_post_meta( $post->ID, 'skip_sidebar', true );
         </div>
     <?php } ?>
 
-    <div class="col-sm-<?php echo $skip_sidebar == 'yes' ? '12 skip-sidebar' : 9; ?> doc-single-content">
+    <div class="col-sm-<?php echo $skip_sidebar == 'yes' ? '12 skip-sidebar' : 9; ?> wedocs-single-content">
         <?php wedocs_breadcrumbs(); ?>
         <?php get_template_part('templates/content', 'single'); ?>
     </div>

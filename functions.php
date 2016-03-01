@@ -121,6 +121,8 @@ function wedocs_docs_search_filter( $query ) {
 
 add_filter( 'pre_get_posts', 'wedocs_docs_search_filter' );
 
+if ( ! function_exists( 'wedocs_get_posts_children' ) ) :
+
 function wedocs_get_posts_children( $parent_id, $post_type = 'page' ){
     $children = array();
     // grab the posts children
@@ -138,3 +140,5 @@ function wedocs_get_posts_children( $parent_id, $post_type = 'page' ){
     $children = array_merge($children,$posts);
     return $children;
 }
+
+endif;
