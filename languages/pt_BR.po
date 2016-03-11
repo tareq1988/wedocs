@@ -1,0 +1,309 @@
+# Copyright (C) 2015 Tareq hasan
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: weDocs 0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/tareq1988/wedocs/issues\n"
+"POT-Creation-Date: 2016-03-09 17:35-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-03-11 11:02-0300\n"
+"Language-Team: PH Munhoz <ph@ph.etc.br>\n"
+"X-Generator: Poedit 1.8.7\n"
+"Last-Translator: PH Munhoz <ph@ph.com.br>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: pt_BR\n"
+
+#: 404.php:4
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "Desculpe-nos, a página que você está tentando acessar não existe."
+
+#: 404.php:7
+msgid "It looks like this was the result of either:"
+msgstr "Parece que este foi o resultado de:"
+
+#: 404.php:9
+msgid "a mistyped address"
+msgstr "endereço digitado incorretamente"
+
+#: 404.php:10
+msgid "an out-of-date link"
+msgstr "link desatualizado"
+
+#: archive.php:30 search.php:5
+msgid "Documents"
+msgstr "Documentos"
+
+#: archive.php:49 search.php:17
+msgid "Nothing found!"
+msgstr "Nenhum resultado encontrado!"
+
+#: base.php:6
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"Você está utilizando um navegador <strong>desatualizado</strong>. Por "
+"favor, <a href=\\”http://browsehappy.com/\\”>atualize seu navegador</a> "
+"para melhorar sua experiência."
+
+#: functions.php:30
+msgid "Sorry, you've already recorded your feedback!"
+msgstr "Desculpe-nos, você já gravou seu feedback!"
+
+#: functions.php:45
+msgid "Thanks for your feedback!"
+msgstr "Obrigado pelo seu feedback!"
+
+#: lib/cleanup.php:193
+msgid "Read more &rarr;"
+msgstr "Leia mais &rarr;"
+
+#: lib/custom.php:11
+msgid "Home"
+msgstr "Início"
+
+#: lib/custom.php:33
+msgid "Search results for"
+msgstr "Resultados para busca de"
+
+#: lib/custom.php:91
+msgid "Posts tagged"
+msgstr "Artigos marcados"
+
+#: lib/custom.php:96
+msgid "Articles posted by"
+msgstr "Artigo publicado por"
+
+#: lib/custom.php:99
+msgid "Error 404"
+msgstr "Erro 404"
+
+#: lib/custom.php:104
+msgid "Page"
+msgstr "Página"
+
+#: lib/custom.php:117
+msgid "Proudly powered by %s"
+msgstr "Orgulhosamente turbinado com WordPress"
+
+#: lib/custom.php:119
+msgid "Theme: %1$s by %2$s"
+msgstr "Tema: %1$s por %2$s"
+
+#: lib/customizer.php:18
+msgid "Theme Logo"
+msgstr "Logo do Tema"
+
+#: lib/customizer.php:20
+msgid "Upload your logo to replace the default Logo (dimension : 220 X 45)"
+msgstr "Envie uma logo para substituir a logo padrão (dimensões: 220 x 45)"
+
+#: lib/customizer.php:26
+msgid "Upload Logo"
+msgstr "Enviar Logo"
+
+#: lib/customizer.php:33
+msgid "weDocs Options"
+msgstr "Opções do weDocs"
+
+#: lib/customizer.php:43
+msgid "Homepage Text - header"
+msgstr "Texto da Home - cabeçalho"
+
+#: lib/customizer.php:55
+msgid "Homepage Text - tagline"
+msgstr "Texto da Home - subtítulo"
+
+#: lib/customizer.php:63
+msgid "&copy; %d. All rights are reserved."
+msgstr "&copy; %d. Todos os direitos reservados"
+
+#: lib/customizer.php:67
+msgid "Footer Text"
+msgstr "Texto do Rodapé"
+
+#: lib/init.php:11
+msgid "Primary Navigation"
+msgstr "Navegação Primária"
+
+#: lib/titles.php:11
+msgid "Latest Posts"
+msgstr "Últimos Artigos"
+
+#: lib/titles.php:22
+msgid "Daily Archives: %s"
+msgstr "Arquivos Diários: %s"
+
+#: lib/titles.php:24
+msgid "Monthly Archives: %s"
+msgstr "Arquivos Mensais: %s"
+
+#: lib/titles.php:26
+msgid "Yearly Archives: %s"
+msgstr "Arquivos Anuais: %s"
+
+#: lib/titles.php:29
+msgid "Author Archives: %s"
+msgstr "Arquivos do Autor: %s"
+
+#: lib/titles.php:34
+msgid "Search Results for %s"
+msgstr "Resultado da Busca por %s"
+
+#: lib/titles.php:36
+msgid "Not Found"
+msgstr "Não Encontrado"
+
+#: lib/widgets.php:8
+msgid "Primary"
+msgstr "Principal"
+
+#: lib/widgets.php:17
+msgid "Footer 1"
+msgstr "Rodapé 1"
+
+#: search.php:26
+msgid "&larr; Older posts"
+msgstr "&larr; Artigos anteriores"
+
+#: search.php:27
+msgid "Newer posts &rarr;"
+msgstr "Artigos recentes &rarr;"
+
+#: templates/comment.php:4
+msgid "%1$s"
+msgstr ""
+
+#: templates/comment.php:5
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#: templates/comment.php:9
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está aguardando moderação."
+
+#: templates/comments.php:8
+msgid "One Response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
+msgstr[0] "Uma resposta para &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Respostas para &ldquo;%2$s&rdquo;"
+
+#: templates/comments.php:18
+msgid "&larr; Older comments"
+msgstr "&larr; Comentários anteriores"
+
+#: templates/comments.php:21
+msgid "Newer comments &rarr;"
+msgstr "Comentários Recentes &rarr;"
+
+#: templates/comments.php:29 templates/comments.php:38
+msgid "Comments are closed."
+msgstr "Fechado para comentários."
+
+#: templates/comments.php:45
+msgid "Leave a Reply"
+msgstr "Deixe uma Resposta"
+
+#: templates/comments.php:45
+msgid "Leave a Reply to %s"
+msgstr "Deixe uma Resposta para %s"
+
+#: templates/comments.php:48
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+"Você precisa <a href=\"%s\">estar logado</a> para deixar um comentário."
+
+#: templates/comments.php:53
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "Logado como <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#: templates/comments.php:54
+msgid "Log out of this account"
+msgstr "Sair desta conta"
+
+#: templates/comments.php:54
+msgid "Log out &raquo;"
+msgstr "Sair &raquo;"
+
+#: templates/comments.php:58
+msgid "Name"
+msgstr "Nome"
+
+#: templates/comments.php:58 templates/comments.php:62
+msgid " (required)"
+msgstr "(obrigatório)"
+
+#: templates/comments.php:62
+msgid "Email (will not be published)"
+msgstr "Email (não será publicado)"
+
+#: templates/comments.php:66
+msgid "Website"
+msgstr "Site"
+
+#: templates/comments.php:71
+msgid "Comment"
+msgstr "Comentário"
+
+#: templates/comments.php:74
+msgid "Submit Comment"
+msgstr "Enviar Comentário"
+
+#: templates/content-feedback.php:8
+msgid "%d person found this useful"
+msgid_plural "%d persons found this useful"
+msgstr[0] "%d pessoa achou esta informação útil"
+msgstr[1] "%d pessoas acharam está informação útil"
+
+#: templates/content-feedback.php:8 templates/content-feedback.php:9
+msgid "No votes yet"
+msgstr "Nenhum voto ainda"
+
+#: templates/content-feedback.php:9
+msgid "%d person found this not useful"
+msgid_plural "%d persons found this not useful"
+msgstr[0] "%d pessoa não achou esta informação útil"
+msgstr[1] "%d pessoas não acharam esta informação útil"
+
+#: templates/entry-meta.php:2
+msgid "By"
+msgstr "Por"
+
+#: templates/header-top-navbar.php:5
+msgid "Toggle navigation"
+msgstr "Alterar Navegação"
+
+#: templates/header-top-navbar.php:29 templates/header-top-navbar.php:35
+#: templates/searchform.php:3 templates/searchform.php:6
+msgid "Search"
+msgstr "Buscar"
+
+#: templates/header-top-navbar.php:30 templates/searchform.php:4
+msgid "Search for:"
+msgstr "Buscar por:"
+
+#: templates/header-top-navbar.php:34
+msgid "All Documents"
+msgstr "Todos os Artigos"
+
+#. Theme Name of the plugin/theme
+msgid "weDocs"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wedevs.com/theme/wedocs/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A documentation theme for WordPress"
+msgstr "Tema do WordPress para Documentações "
+
+#. Author of the plugin/theme
+msgid "Tareq hasan"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://tareq.wedevs.com/"
+msgstr ""
