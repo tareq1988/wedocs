@@ -52,6 +52,10 @@ msgstr ""
 msgid "Thanks for your feedback!"
 msgstr ""
 
+#: functions.php:64
+msgid "All Docs"
+msgstr ""
+
 #: lib/cleanup.php:193
 msgid "Read more &rarr;"
 msgstr ""
@@ -246,6 +250,10 @@ msgstr ""
 msgid "Submit Comment"
 msgstr ""
 
+#: templates/content-feedback.php:5
+msgid "Was this article helpful to you?"
+msgstr ""
+
 #: templates/content-feedback.php:8
 msgid "%d person found this useful"
 msgid_plural "%d persons found this useful"
@@ -261,6 +269,18 @@ msgid "%d person found this not useful"
 msgid_plural "%d persons found this not useful"
 msgstr[0] ""
 msgstr[1] ""
+
+#: templates/content-feedback.php:14
+msgid "Yes"
+msgstr ""
+
+#: templates/content-feedback.php:15
+msgid "No"
+msgstr ""
+
+#: templates/content-single.php:23
+msgid "Articles"
+msgstr ""
 
 #: templates/entry-meta.php:2
 msgid "By"

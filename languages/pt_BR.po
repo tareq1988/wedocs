@@ -4,16 +4,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weDocs 0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/tareq1988/wedocs/issues\n"
-"POT-Creation-Date: 2016-03-09 17:35-0300\n"
+"POT-Creation-Date: 2016-03-11 12:12-0300\n"
+"PO-Revision-Date: 2016-03-11 12:13-0300\n"
+"Last-Translator: PH Munhoz <ph@ph.etc.br>\n"
+"Language-Team: PH Munhoz <ph@ph.etc.br>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-03-11 11:02-0300\n"
-"Language-Team: PH Munhoz <ph@ph.etc.br>\n"
 "X-Generator: Poedit 1.8.7\n"
-"Last-Translator: PH Munhoz <ph@ph.com.br>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"Language: pt_BR\n"
 
 #: 404.php:4
 msgid "Sorry, but the page you were trying to view does not exist."
@@ -44,9 +44,9 @@ msgid ""
 "You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
 "browsehappy.com/\">upgrade your browser</a> to improve your experience."
 msgstr ""
-"Você está utilizando um navegador <strong>desatualizado</strong>. Por "
-"favor, <a href=\\”http://browsehappy.com/\\”>atualize seu navegador</a> "
-"para melhorar sua experiência."
+"Você está utilizando um navegador <strong>desatualizado</strong>. Por favor, "
+"<a href=\\”http://browsehappy.com/\\”>atualize seu navegador</a> para "
+"melhorar sua experiência."
 
 #: functions.php:30
 msgid "Sorry, you've already recorded your feedback!"
@@ -55,6 +55,10 @@ msgstr "Desculpe-nos, você já gravou seu feedback!"
 #: functions.php:45
 msgid "Thanks for your feedback!"
 msgstr "Obrigado pelo seu feedback!"
+
+#: functions.php:64
+msgid "All Docs"
+msgstr "Todas as Categorias"
 
 #: lib/cleanup.php:193
 msgid "Read more &rarr;"
@@ -174,7 +178,7 @@ msgstr "Artigos recentes &rarr;"
 
 #: templates/comment.php:4
 msgid "%1$s"
-msgstr ""
+msgstr "%1$s"
 
 #: templates/comment.php:5
 msgid "(Edit)"
@@ -251,6 +255,10 @@ msgstr "Comentário"
 msgid "Submit Comment"
 msgstr "Enviar Comentário"
 
+#: templates/content-feedback.php:5
+msgid "Was this article helpful to you?"
+msgstr "Este artigo foi útil para você?"
+
 #: templates/content-feedback.php:8
 msgid "%d person found this useful"
 msgid_plural "%d persons found this useful"
@@ -266,6 +274,18 @@ msgid "%d person found this not useful"
 msgid_plural "%d persons found this not useful"
 msgstr[0] "%d pessoa não achou esta informação útil"
 msgstr[1] "%d pessoas não acharam esta informação útil"
+
+#: templates/content-feedback.php:14
+msgid "Yes"
+msgstr "Sim"
+
+#: templates/content-feedback.php:15
+msgid "No"
+msgstr "Não"
+
+#: templates/content-single.php:23
+msgid "Articles"
+msgstr "Veja Também"
 
 #: templates/entry-meta.php:2
 msgid "By"
