@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: weDocs 0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/tareq1988/wedocs/issues\n"
-"POT-Creation-Date: 2016-03-11 12:12-0300\n"
-"PO-Revision-Date: 2016-03-11 12:13-0300\n"
+"POT-Creation-Date: 2016-03-20 13:30-0300\n"
+"PO-Revision-Date: 2016-03-20 13:49-0300\n"
 "Last-Translator: PH Munhoz <ph@ph.etc.br>\n"
 "Language-Team: PH Munhoz <ph@ph.etc.br>\n"
 "Language: pt_BR\n"
@@ -167,6 +167,10 @@ msgstr "Principal"
 #: lib/widgets.php:17
 msgid "Footer 1"
 msgstr "Rodapé 1"
+
+#: lib/walker-docs.php:22
+msgid "Introduction"
+msgstr "Introdução"
 
 #: search.php:26
 msgid "&larr; Older posts"

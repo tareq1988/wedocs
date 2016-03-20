@@ -164,6 +164,10 @@ msgstr ""
 msgid "Footer 1"
 msgstr ""
 
+#: lib/walker-docs.php:22
+msgid "Introduction"
+msgstr ""
+
 #: search.php:26
 msgid "&larr; Older posts"
 msgstr ""
