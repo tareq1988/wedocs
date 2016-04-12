@@ -1,16 +1,33 @@
 # weDocs
 
-A clean documentation theme for WordPress
+WordPress documentation theme to use with [weDocs](https://wordpress.org/plugins/wedocs/) plugin.
 
 demo: [docs.wedevs.com](http://docs.wedevs.com)
 
-![screenshot](screenshot.png)
+![screenshot](weDocsThemeHomePage.png)
 
-## Using
+## Power Installation
 
-* Just create categories and assign posts to the category. Thats all you need. 
-* To create bootstrap like navigation in left side of each post, you've to put heading in H1 tag on your posts. H1 tags will be automatically pulled out and placed as navigation. [example](http://docs.wedevs.com/creating-posting-forms/)
-* Open the theme customiser. There is a logo and home page headline, sub heading text and footer text option for customisation.
+1. If you know how to git, then clone the repo: `git clone https://github.com/tareq1988/wedocs.git` to your themes directory.
+
+2. Log in to your dashboard and navigate to `Appearance → Themes`. Click the **Activate** button on the weDocs theme.
+
+##Simple Installation
+
+1. **[Download the .zip file from here](https://github.com/tareq1988/wedocs/archive/develop.zip)***.
+
+2. Navigate to `wp-admin → Appearance → Themes → Add New → Upload Theme`. Choose the zip file you just downloaded, upload and activate.
+
+>**If you do not have weDocs plugin installed, go to `Plugins → Add New` and Search for `wedocs` and install.**
+
+##Customize
+
+The theme only has a feature to use a custom image as a logo.
+Navigate to `Appearance → Customizer`. Then you will find the option to add a custom logo image.
+
+If you want to add more features, please fork and help 🙂.
+
+Of course, you can customize the style and the source code as you like. Pull requests are always exciting!
 
 ### Built with
 
@@ -22,8 +39,8 @@ demo: [docs.wedevs.com](http://docs.wedevs.com)
 
 
 ## Contribute
-If you want to contribute on this project, you are more than welcome.
+If you want to contribute to this project and have any questions, open an issue or send a mail to support at wedevs dot com.
 
 
 ## Author
-[Tareq Hasan](http://tareq.wedevs.com)
+[Tareq Hasan](http://tareq.co)
