@@ -10,13 +10,16 @@ demo: [docs.wedevs.com](http://docs.wedevs.com)
 
 1. Clone the repo: `git clone https://github.com/tareq1988/wedocs.git` to your themes directory.
 
-2. Log in to your dashboard and navigate to Appearance → Themes. Click the activate button on weDocs theme.
+2. Log in to your dashboard and navigate to `Appearance → Themes`. Click the **Activate** button on weDocs theme.
 
-To install the weDocs plugin, go to Plugins → Add New → Search for **wedocs** and install.
+If you already do not have weDocs plugin installed, go to `Plugins → Add New` and Search for **wedocs** and install.
 
 ##Customize
 
-Currently, the theme only has feature to use a custom image as logo. If you want to add more features, please fork and help 🙂
+The theme only has feature to use a custom image as logo.
+Navigate to `Appearance → Customizer`. Then you will find the option to add a custom logo image.
+
+If you want to add more features, please fork and help 🙂.
 
 And ofcourse, you can customize the style and the source code as you like. I pull request always makes me excited!
 
