@@ -4,15 +4,21 @@ WordPress documentation theme to use with [weDocs](https://wordpress.org/plugins
 
 demo: [docs.wedevs.com](http://docs.wedevs.com)
 
-![screenshot](screenshot.png)
+![screenshot](weDocsThemeHomePage.png)
 
-## Installation
+## Power Installation
 
-1. Clone the repo: `git clone https://github.com/tareq1988/wedocs.git` to your themes directory.
+1. If you know how to git, then clone the repo: `git clone https://github.com/tareq1988/wedocs.git` to your themes directory.
 
 2. Log in to your dashboard and navigate to `Appearance → Themes`. Click the **Activate** button on the weDocs theme.
 
-If you already do not have weDocs plugin installed, go to `Plugins → Add New` and Search for **wedocs** and install.
+##Simple Installation
+
+1. **[Download the .zip file from here](https://github.com/tareq1988/wedocs/archive/develop.zip)***.
+
+2. Navigate to `wp-admin → Appearance → Themes → Add New → Upload Theme`. Choose the zip file you just downloaded, upload and activate.
+
+>**If you do not have weDocs plugin installed, go to `Plugins → Add New` and Search for `wedocs` and install.**
 
 ##Customize
 
