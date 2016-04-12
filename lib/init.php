@@ -4,7 +4,7 @@
  */
 function wedocs_setup() {
     // Make theme available for translation
-    load_theme_textdomain( 'wedocs', get_template_directory() . '/lang' );
+    load_theme_textdomain( 'wedocs', get_template_directory() . '/languages' );
 
     // Register wp_nav_menu() menus (http://codex.wordpress.org/Function_Reference/register_nav_menus)
     register_nav_menus( array(

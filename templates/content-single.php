@@ -27,7 +27,13 @@
                     echo '</div>';
                 }
 
-                get_template_part( 'templates/content', 'feedback' );
+                if ( function_exists( 'wedocs_doc_nav' ) ) {
+                    wedocs_doc_nav();
+                }
+
+                if ( function_exists( 'wedocs_get_template_part' ) ) {
+                    wedocs_get_template_part( 'content', 'feedback' );
+                }
             }
             ?>
 

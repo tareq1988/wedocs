@@ -3,6 +3,7 @@
  * Custom functions
  */
 
+if ( ! function_exists( 'wedocs_breadcrumbs' ) ) :
 
 function wedocs_breadcrumbs() {
 
@@ -126,6 +127,8 @@ function wedocs_breadcrumbs() {
 
     }
 }
+
+endif;
 
 /**
  * Footer credits.

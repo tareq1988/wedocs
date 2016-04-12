@@ -2,7 +2,7 @@
 
 <div class="wedoc-feedback-wrap well">
 
-    <span>Was this article helpful to you?</span>
+    <span><?php echo __('Was this article helpful to you?', 'wedocs'); ?></span>
 
     <?php
     $positive = (int) get_post_meta( $post->ID, 'positive', true );

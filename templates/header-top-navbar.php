@@ -64,7 +64,7 @@
 								}
 								?>
 								<li class="divider"></li>
-								<li><a href="#all">All Docs</a></li>
+								<li><a href="#all"><?php _e('All Docs', 'wedocs'); ?></a></li>
 							</ul>
 
 							<button type="submit" class="search-submit btn btn-primary btn-lg"><?php _e('Search', 'wedocs'); ?></button>
