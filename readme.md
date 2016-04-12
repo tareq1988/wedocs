@@ -21,7 +21,7 @@ Navigate to `Appearance → Customizer`. Then you will find the option to add a 
 
 If you want to add more features, please fork and help 🙂.
 
-Of course, you can customize the style and the source code as you like. I pull request always makes me excited!
+Of course, you can customize the style and the source code as you like. Pull requests are always exciting!
 
 ### Built with
 
