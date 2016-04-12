@@ -1,16 +1,24 @@
 # weDocs
 
-A clean documentation theme for WordPress
+WordPress documentation theme to use with [weDocs](https://wordpress.org/plugins/wedocs/) plugin.
 
 demo: [docs.wedevs.com](http://docs.wedevs.com)
 
 ![screenshot](screenshot.png)
 
-## Using
+## Installation
 
-* Just create categories and assign posts to the category. Thats all you need. 
-* To create bootstrap like navigation in left side of each post, you've to put heading in H1 tag on your posts. H1 tags will be automatically pulled out and placed as navigation. [example](http://docs.wedevs.com/creating-posting-forms/)
-* Open the theme customiser. There is a logo and home page headline, sub heading text and footer text option for customisation.
+1. Clone the repo: `git clone https://github.com/tareq1988/wedocs.git` to your themes directory.
+
+2. Log in to your dashboard and navigate to Appearance → Themes. Click the activate button on weDocs theme.
+
+To install the weDocs plugin, go to Plugins → Add New → Search for **wedocs** and install.
+
+##Customize
+
+Currently, the theme only has feature to use a custom image as logo. If you want to add more features, please fork and help 🙂
+
+And ofcourse, you can customize the style and the source code as you like. I pull request always makes me excited!
 
 ### Built with
 
@@ -26,4 +34,4 @@ If you want to contribute on this project, you are more than welcome.
 
 
 ## Author
-[Tareq Hasan](http://tareq.wedevs.com)
+[Tareq Hasan](http://tareq.co)
