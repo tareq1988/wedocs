@@ -1,0 +1,328 @@
+# Copyright (C) 2015 Tareq hasan
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: weDocs 0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/tareq1988/wedocs/issues\n"
+"POT-Creation-Date: 2016-06-06 08:46+0430\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-06-06 14:43+0430\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"X-Generator: Poedit 1.8.6\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language: fa_IR\n"
+
+#: 404.php:4
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "متاسفم، ولی برگه ای که می خواهید ببینید وجود ندارد"
+
+#: 404.php:7
+msgid "It looks like this was the result of either:"
+msgstr "به نظر می رسد نتیجه این باشد:"
+
+#: 404.php:9
+msgid "a mistyped address"
+msgstr "یک آدرس با اشتباه تایپی"
+
+#: 404.php:10
+msgid "an out-of-date link"
+msgstr "یک لینک تاریخ گذشته"
+
+#: archive.php:30 search.php:5
+msgid "Documents"
+msgstr "مستندات"
+
+#: archive.php:49 search.php:17
+msgid "Nothing found!"
+msgstr "چیزی یافت نشد!"
+
+#: base.php:6
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http://"
+"browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"شما از نسخه <strong>قدیمی</strong> مرورگر استفاده می کنید. برای تجربه بهتر "
+"<a href=\"http://browsehappy.com/\">مرورگر خود را ارتقا دهید</a>"
+
+#: functions.php:30
+msgid "Sorry, you've already recorded your feedback!"
+msgstr "متاسفم، شما قبلا نظر خود را ثبت کرده اید!"
+
+#: functions.php:45
+msgid "Thanks for your feedback!"
+msgstr "به خاطر نظرتان ممنونم"
+
+#: functions.php:64
+msgid "All Docs"
+msgstr "تمام مستندات"
+
+#: lib/cleanup.php:193
+msgid "Read more &rarr;"
+msgstr "بیشتر بخوانید &rarr;"
+
+#: lib/custom.php:11
+msgid "Home"
+msgstr "خانه"
+
+#: lib/custom.php:33
+msgid "Search results for"
+msgstr "نتایج جستجو برای"
+
+#: lib/custom.php:91
+msgid "Posts tagged"
+msgstr "پست های برچسب دار"
+
+#: lib/custom.php:96
+msgid "Articles posted by"
+msgstr "مقالات پست شده اند توسط "
+
+#: lib/custom.php:99
+msgid "Error 404"
+msgstr "خطای 404"
+
+#: lib/custom.php:104
+msgid "Page"
+msgstr "برگه"
+
+#: lib/custom.php:117
+msgid "Proudly powered by %s"
+msgstr "با افتخار قدرت گرفته با %s"
+
+#: lib/custom.php:119
+msgid "Theme: %1$s by %2$s"
+msgstr "پوسته:%1$s بوسیله %2$s"
+
+#: lib/customizer.php:18
+msgid "Theme Logo"
+msgstr "لوگوی پوسته"
+
+#: lib/customizer.php:20
+msgid "Upload your logo to replace the default Logo (dimension : 220 X 45)"
+msgstr "آرم خود را برای جایگزینی آرم پیشفرض آپلود کنید(اندازه: 220 در 45)"
+
+#: lib/customizer.php:26
+msgid "Upload Logo"
+msgstr "بارگذاری لوگو"
+
+#: lib/customizer.php:33
+msgid "weDocs Options"
+msgstr "تنطیمات weDocs"
+
+#: lib/customizer.php:43
+msgid "Homepage Text - header"
+msgstr "متن صفحه خانگی - هدر"
+
+#: lib/customizer.php:55
+msgid "Homepage Text - tagline"
+msgstr "متن صفحه خانگی - خط برچسب"
+
+#: lib/customizer.php:63
+msgid "&copy; %d. All rights are reserved."
+msgstr "&copy; %d تمامی حقوق محفوظ است"
+
+#: lib/customizer.php:67
+msgid "Footer Text"
+msgstr "متن فوتر"
+
+#: lib/init.php:11
+msgid "Primary Navigation"
+msgstr "ناوبری اصلی"
+
+#: lib/titles.php:11
+msgid "Latest Posts"
+msgstr "پست های اخیر"
+
+#: lib/titles.php:22
+msgid "Daily Archives: %s"
+msgstr "آرشیو روزانه: %s"
+
+#: lib/titles.php:24
+msgid "Monthly Archives: %s"
+msgstr "آرشیو ماهانه: %s"
+
+#: lib/titles.php:26
+msgid "Yearly Archives: %s"
+msgstr "آرشیو سالیانه: %s"
+
+#: lib/titles.php:29
+msgid "Author Archives: %s"
+msgstr "آرشیو نویسندگان: %s"
+
+#: lib/titles.php:34
+msgid "Search Results for %s"
+msgstr "نتایج جسنتجو برای %s"
+
+#: lib/titles.php:36
+msgid "Not Found"
+msgstr "یافت نشد"
+
+#: lib/widgets.php:8
+msgid "Primary"
+msgstr "اصلی"
+
+#: lib/widgets.php:17
+msgid "Footer 1"
+msgstr "فوتر 1"
+
+#: lib/walker-docs.php:22
+msgid "Introduction"
+msgstr "دستور العمل"
+
+#: search.php:26
+msgid "&larr; Older posts"
+msgstr "&larr; پست های قدیمی تر"
+
+#: search.php:27
+msgid "Newer posts &rarr;"
+msgstr "پست های جدیدتر &rarr;"
+
+#: templates/comment.php:4
+msgid "%1$s"
+msgstr "%1$s"
+
+#: templates/comment.php:5
+msgid "(Edit)"
+msgstr "(ویرایش)"
+
+#: templates/comment.php:9
+msgid "Your comment is awaiting moderation."
+msgstr "پاسخ شما در انتظار تایید است"
+
+#: templates/comments.php:8
+msgid "One Response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
+msgstr[0] "یک پاسخ برای  &ldquo;%2$s&rdquo;"
+
+#: templates/comments.php:18
+msgid "&larr; Older comments"
+msgstr "&larr;  دیدگاه های قدیمی تر"
+
+#: templates/comments.php:21
+msgid "Newer comments &rarr;"
+msgstr "دیدگاه های جدید تر &rarr;"
+
+#: templates/comments.php:29 templates/comments.php:38
+msgid "Comments are closed."
+msgstr "دیدگاه ها بسته شده است"
+
+#: templates/comments.php:45
+msgid "Leave a Reply"
+msgstr "ارسال پاسخ"
+
+#: templates/comments.php:45
+msgid "Leave a Reply to %s"
+msgstr "ارسال پاسخ به %s"
+
+#: templates/comments.php:48
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "شما باید برای ارسال دیدگاه <a href=\"%s\">وارد شوید</a>"
+
+#: templates/comments.php:53
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "وارد شده با <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#: templates/comments.php:54
+msgid "Log out of this account"
+msgstr "خروج از این حساب"
+
+#: templates/comments.php:54
+msgid "Log out &raquo;"
+msgstr "خروج &raquo;"
+
+#: templates/comments.php:58
+msgid "Name"
+msgstr "نام"
+
+#: templates/comments.php:58 templates/comments.php:62
+msgid " (required)"
+msgstr "(ضروری)"
+
+#: templates/comments.php:62
+msgid "Email (will not be published)"
+msgstr "ایمیل(منتشر نخواهد شد)"
+
+#: templates/comments.php:66
+msgid "Website"
+msgstr "وبسایت"
+
+#: templates/comments.php:71
+msgid "Comment"
+msgstr "دیدگاه"
+
+#: templates/comments.php:74
+msgid "Submit Comment"
+msgstr "ارسال دیدگاه"
+
+#: templates/content-feedback.php:5
+msgid "Was this article helpful to you?"
+msgstr "آیا این مقاله برای شما مفید بود؟"
+
+#: templates/content-feedback.php:8
+msgid "%d person found this useful"
+msgid_plural "%d persons found this useful"
+msgstr[0] "%d نفر گفته اند این نوشته مفید است"
+
+#: templates/content-feedback.php:8 templates/content-feedback.php:9
+msgid "No votes yet"
+msgstr "هنوز کسی رای نداده"
+
+#: templates/content-feedback.php:9
+msgid "%d person found this not useful"
+msgid_plural "%d persons found this not useful"
+msgstr[0] "%d نفر گفته اند که این نوشته مفید نیست"
+
+#: templates/content-feedback.php:14
+msgid "Yes"
+msgstr "بله"
+
+#: templates/content-feedback.php:15
+msgid "No"
+msgstr "خیر"
+
+#: templates/content-single.php:23
+msgid "Articles"
+msgstr "مقالات"
+
+#: templates/entry-meta.php:2
+msgid "By"
+msgstr "بوسیله"
+
+#: templates/header-top-navbar.php:5
+msgid "Toggle navigation"
+msgstr "تعویض ناوبری"
+
+#: templates/header-top-navbar.php:29 templates/header-top-navbar.php:35
+#: templates/searchform.php:3 templates/searchform.php:6
+msgid "Search"
+msgstr "جستجو"
+
+#: templates/header-top-navbar.php:30 templates/searchform.php:4
+msgid "Search for:"
+msgstr "جستجو برای:"
+
+#: templates/header-top-navbar.php:34
+msgid "All Documents"
+msgstr "تمام مستندات"
+
+#. Theme Name of the plugin/theme
+msgid "weDocs"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://wedevs.com/theme/wedocs/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A documentation theme for WordPress"
+msgstr "یک پوسته مستندات برای وردپرس"
+
+#. Author of the plugin/theme
+msgid "Tareq hasan"
+msgstr "طارق حسن"
+
+#. Author URI of the plugin/theme
+msgid "http://tareq.wedevs.com/"
+msgstr ""
