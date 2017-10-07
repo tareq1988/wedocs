@@ -65,10 +65,9 @@ function wedocs_display_sidebar() {
          */
         array(
             'template-custom.php',
-            'full-width'
+            'templates/full-width.php'
         )
     );
-
     return apply_filters('wedocs_display_sidebar', $sidebar_config->display);
 }
 
