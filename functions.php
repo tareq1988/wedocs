@@ -74,7 +74,7 @@ function wedocs_register_post_type() {
         'label'               => __( 'Doc', 'wedocs' ),
         'description'         => __( 'Post type for Documentation ', 'wedocs' ),
         'labels'              => $labels,
-        'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'page-attributes', 'custom-fields' ),
+        'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'page-attributes', 'custom-fields', 'revisions' ),
         'hierarchical'        => true,
         'public'              => true,
         'show_ui'             => true,
