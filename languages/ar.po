@@ -1,0 +1,345 @@
+# Copyright (C) 2015 Tareq hasan
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: weDocs 0.1\n"
+"Report-Msgid-Bugs-To: https://github.com/tareq1988/wedocs/issues\n"
+"POT-Creation-Date: 2015-02-07 20:16:43+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-05-04 20:07+0000\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"X-Generator: Loco https://localise.biz/\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5;\n"
+"X-Loco-Version: 2.3.3; wp-5.4.1"
+
+#: 404.php:4
+msgid "Sorry, but the page you were trying to view does not exist."
+msgstr "عذراً، الصفحة التي تحاول عرضها غير موجودة."
+
+#: 404.php:7
+msgid "It looks like this was the result of either:"
+msgstr "يبدو أن هذا كان نتيجة إما:"
+
+#: 404.php:9
+msgid "a mistyped address"
+msgstr "عنوان خاطئ"
+
+#: 404.php:10
+msgid "an out-of-date link"
+msgstr "رابط قديم"
+
+#: archive.php:30 search.php:5
+msgid "Documents"
+msgstr "الوثائق"
+
+#: archive.php:49 search.php:17
+msgid "Nothing found!"
+msgstr "لم يتم العثور على شيء!"
+
+#: base.php:6
+msgid ""
+"You are using an <strong>outdated</strong> browser. Please <a href=\"http:"
+"//browsehappy.com/\">upgrade your browser</a> to improve your experience."
+msgstr ""
+"أنت تستخدم متصفح <strong>قديم</strong>. الرجاء <a href=\"http://browsehappy."
+"com/\">قم بترقية متصفحك </a> لتحسين تجربتك."
+
+#: functions.php:30
+msgid "Sorry, you've already recorded your feedback!"
+msgstr "عذراً، لقد سجلت ملاحظاتك بالفعل!"
+
+#: functions.php:45
+msgid "Thanks for your feedback!"
+msgstr "شكراً لملاحظاتك!"
+
+#: functions.php:64
+msgid "All Docs"
+msgstr "كل الوثائق"
+
+#: lib/cleanup.php:193
+msgid "Read more &rarr;"
+msgstr "اقرأ المزيد &larr;"
+
+#: lib/custom.php:11
+msgid "Home"
+msgstr "الرئيسية"
+
+#: lib/custom.php:33
+msgid "Search results for"
+msgstr "نتائج البحث عن"
+
+#: lib/custom.php:91
+msgid "Posts tagged"
+msgstr "منشورات متعلقة"
+
+#: lib/custom.php:96
+msgid "Articles posted by"
+msgstr "المقالات نشرت بواسطة"
+
+#: lib/custom.php:99
+msgid "Error 404"
+msgstr "خطأ 404"
+
+#: lib/custom.php:104
+msgid "Page"
+msgstr "صفحة"
+
+#: lib/custom.php:117
+msgid "Proudly powered by %s"
+msgstr "بفخر بواسطة %s"
+
+#: lib/custom.php:119
+msgid "Theme: %1$s by %2$s"
+msgstr "السمة %1$s بواسطة %2$s"
+
+#: lib/customizer.php:18
+msgid "Theme Logo"
+msgstr "شعار السمة"
+
+#: lib/customizer.php:20
+msgid "Upload your logo to replace the default Logo (dimension : 220 X 45)"
+msgstr "قم بتحميل شعارك لاستبدال الشعار الافتراضي (الأبعاد: 220 × 45)"
+
+#: lib/customizer.php:26
+msgid "Upload Logo"
+msgstr "تحميل الشعار"
+
+#: lib/customizer.php:33
+msgid "weDocs Options"
+msgstr "خيارات weDocs"
+
+#: lib/customizer.php:43
+msgid "Homepage Text - header"
+msgstr "الصفحة الرئيسية نص - الترويسة"
+
+#: lib/customizer.php:55
+msgid "Homepage Text - tagline"
+msgstr "نص الصفحة الرئيسية - سطر الوصف"
+
+#: lib/customizer.php:63
+msgid "&copy; %d. All rights are reserved."
+msgstr "&copy; %d. جميع الحقوق محفوظة."
+
+#: lib/customizer.php:67
+msgid "Footer Text"
+msgstr "نص التذييل"
+
+#: lib/init.php:11
+msgid "Primary Navigation"
+msgstr "التنقل الرئيسي"
+
+#: lib/titles.php:11
+msgid "Latest Posts"
+msgstr "آخر المشاركات"
+
+#: lib/titles.php:22
+msgid "Daily Archives: %s"
+msgstr "المحفوظات اليومية: %s"
+
+#: lib/titles.php:24
+msgid "Monthly Archives: %s"
+msgstr "المحفوظات الشهرية"
+
+#: lib/titles.php:26
+msgid "Yearly Archives: %s"
+msgstr "المحفوظات السنوية: %s"
+
+#: lib/titles.php:29
+msgid "Author Archives: %s"
+msgstr "سجل الكتاب: %s"
+
+#: lib/titles.php:34
+msgid "Search Results for %s"
+msgstr "نتائج البحث عن %s"
+
+#: lib/titles.php:36
+msgid "Not Found"
+msgstr "لم يتم العثور عليه"
+
+#: lib/widgets.php:8
+msgid "Primary"
+msgstr "رئيسي"
+
+#: lib/widgets.php:17
+msgid "Footer 1"
+msgstr "التذييل 1"
+
+#: lib/walker-docs.php:22
+msgid "Introduction"
+msgstr "مقدمة"
+
+#: search.php:26
+msgid "&larr; Older posts"
+msgstr "&rarr; منشورات أقدم"
+
+#: search.php:27
+msgid "Newer posts &rarr;"
+msgstr "منشورات أحدث &larr;"
+
+#: templates/comment.php:4
+msgid "%1$s"
+msgstr "%1$s"
+
+#: templates/comment.php:5
+msgid "(Edit)"
+msgstr "(تعديل)"
+
+#: templates/comment.php:9
+msgid "Your comment is awaiting moderation."
+msgstr "تعليقك ينتظر الموافقة عليه."
+
+#: templates/comments.php:8
+msgid "One Response to &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s Responses to &ldquo;%2$s&rdquo;"
+msgstr[0] "لا ردود على &ldquo;%2$s&rdquo;"
+msgstr[1] "رد واحد على &ldquo;%2$s&rdquo;"
+msgstr[2] "ردين على &ldquo;%2$s&rdquo;"
+msgstr[3] "بعض الردود على &ldquo;%2$s&rdquo;"
+msgstr[4] "%1$s رد على &ldquo;%2$s&rdquo;"
+msgstr[5] "%1$s رد على &ldquo;%2$s&rdquo;"
+
+#: templates/comments.php:18
+msgid "&larr; Older comments"
+msgstr "&rarr; تعليقات أقدم"
+
+#: templates/comments.php:21
+msgid "Newer comments &rarr;"
+msgstr "تعليقات أحدث &larr;"
+
+#: templates/comments.php:29 templates/comments.php:38
+msgid "Comments are closed."
+msgstr "تم إقفال التعليقات."
+
+#: templates/comments.php:45
+msgid "Leave a Reply"
+msgstr "اترك رد"
+
+#: templates/comments.php:45
+msgid "Leave a Reply to %s"
+msgstr "أترك رد لـ %s"
+
+#: templates/comments.php:48
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "يجب أن تكون <a href=\"%s\">مسجل الدخول</a> لإضافة تعليق."
+
+#: templates/comments.php:53
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr "مسجل الدخول كـ <a href=\"%s/wp-admin/profile.php\">%s</a>."
+
+#: templates/comments.php:54
+msgid "Log out of this account"
+msgstr "تسجيل الخروج من هذا الحساب"
+
+#: templates/comments.php:54
+msgid "Log out &raquo;"
+msgstr "تسجيل الخروج &laquo;"
+
+#: templates/comments.php:58
+msgid "Name"
+msgstr "اسم"
+
+#: templates/comments.php:58 templates/comments.php:62
+msgid " (required)"
+msgstr " (مطلوب)"
+
+#: templates/comments.php:62
+msgid "Email (will not be published)"
+msgstr "البريد الإلكتروني (لن تتم مشاركته)"
+
+#: templates/comments.php:66
+msgid "Website"
+msgstr "موقع إلكتروني"
+
+#: templates/comments.php:71
+msgid "Comment"
+msgstr "تعليق"
+
+#: templates/comments.php:74
+msgid "Submit Comment"
+msgstr "إرسال تعليق"
+
+#: templates/content-feedback.php:5
+msgid "Was this article helpful to you?"
+msgstr "هل كانت هذه المقالة مفيدة لك؟"
+
+#: templates/content-feedback.php:8
+msgid "%d person found this useful"
+msgid_plural "%d persons found this useful"
+msgstr[0] "%d شخص وجد هذا مفيداً"
+msgstr[1] "%d شخص وجد هذا مفيداً"
+msgstr[2] "%d شخص وجد هذا مفيداً"
+msgstr[3] "%d شخص وجد هذا مفيداً"
+msgstr[4] "%d أشخاص وجدوا هذا مفيداً"
+msgstr[5] "%d أشخاص وجدوا هذا مفيداً"
+
+#: templates/content-feedback.php:8 templates/content-feedback.php:9
+msgid "No votes yet"
+msgstr "لا توجد أصوات حتى الآن"
+
+#: templates/content-feedback.php:9
+msgid "%d person found this not useful"
+msgid_plural "%d persons found this not useful"
+msgstr[0] "%d شخصاً وجد هذا غير مفيداً"
+msgstr[1] "%d شخصاً وجد هذا غير مفيداً"
+msgstr[2] "%d شخصاً وجد هذا غير مفيداً"
+msgstr[3] "%d أشخاصاً وجدوا هذا غير مفيداً"
+msgstr[4] "%d أشخاصاً وجدوا هذا غير مفيداً"
+msgstr[5] "%d أشخاصاً وجدوا هذا غير مفيداً"
+
+#: templates/content-feedback.php:14
+msgid "Yes"
+msgstr "نعم"
+
+#: templates/content-feedback.php:15
+msgid "No"
+msgstr "لا"
+
+#: templates/content-single.php:23
+msgid "Articles"
+msgstr "المقالات"
+
+#: templates/entry-meta.php:2
+msgid "By"
+msgstr "بواسطة"
+
+#: templates/header-top-navbar.php:5
+msgid "Toggle navigation"
+msgstr "تبديل التنقل"
+
+#: templates/header-top-navbar.php:29 templates/header-top-navbar.php:35 
+#: templates/searchform.php:3 templates/searchform.php:6
+msgid "Search"
+msgstr "بحث"
+
+#: templates/header-top-navbar.php:30 templates/searchform.php:4
+msgid "Search for:"
+msgstr "البحث عن:"
+
+#: templates/header-top-navbar.php:34
+msgid "All Documents"
+msgstr "كل الوثائق"
+
+#. Theme Name of the plugin/theme
+msgid "weDocs"
+msgstr "weDocs"
+
+#. Theme URI of the plugin/theme
+msgid "http://wedevs.com/theme/wedocs/"
+msgstr "http://wedevs.com/theme/wedocs/"
+
+#. Description of the plugin/theme
+msgid "A documentation theme for WordPress"
+msgstr "سمة توثيق لـ WordPress"
+
+#. Author of the plugin/theme
+msgid "Tareq hasan"
+msgstr "طارق حسن"
+
+#. Author URI of the plugin/theme
+msgid "http://tareq.wedevs.com/"
+msgstr "http://tareq.wedevs.com/"
